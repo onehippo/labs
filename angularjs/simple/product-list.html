@@ -1,0 +1,15 @@
+<div ng-controller="ProductsController">
+    <div class="container products">
+        <h2>Top Products</h2>
+        <div class="row">
+            <div class="col-md-4 tile" ng-repeat="product in products">
+                <img src="{{product.smallThumbnail}}"/>
+                <div>
+                    {{product.localizedName}}
+                </div>
+                <p class="price-label">{{product.price | currency:"$"}}</p>
+                <p><span class="btn btn-default" role="button" ng-click="showProduct(product)">View details »</span></p>
+            </div>
+        </div>
+    </div>
+</div>

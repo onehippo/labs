@@ -1,0 +1,9 @@
+<div ng-controller="ProductsController">
+    <h1>{{product.title}}</h1>
+    <p>{{product.summary}}</p>
+    <p><img src="{{product.image}}"></p>
+    <div ng-bind-html="product.description"></div>
+    <div>
+        <span class="label label-info" ng-repeat="category in product.categories">{{category}}</span>
+    </div>
+</div>
