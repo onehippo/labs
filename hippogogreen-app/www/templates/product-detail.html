@@ -1,0 +1,26 @@
+<ion-view view-title="{{product.localizedName}}">
+    <ion-content class="padding">
+        <div class="list card">
+            <div class="item item-divider">
+                {{product.localizedName}}
+            </div>
+            <div class="item item-image">
+                <ion-slide-box on-slide-changed="slideHasChanged($index)">
+                    <ion-slide ng-repeat="image in product.images">
+                        <img ng-src="{{image}}">
+                    </ion-slide>
+                </ion-slide-box>
+            </div>
+            <div class="item item-text-wrap" ng-bind-html="product.summary">
+            </div>
+            <div class="item item-text-wrap" ng-bind-html="product.description">
+            </div>
+            <div class="item">
+                <b>{{product.price| currency:"EUR "}}</b>
+            </div>
+        </div>
+        <button class="button button-block button-balanced">
+            <i class="icon ion-ios7-cart"></i> Order...
+        </button>
+    </ion-content>
+</ion-view>

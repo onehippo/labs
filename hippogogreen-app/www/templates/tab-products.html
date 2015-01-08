@@ -1,0 +1,11 @@
+<ion-view view-title="Top Products">
+    <ion-content>
+        <ion-list>
+            <ion-item class="item-avatar" ng-repeat="product in products" type="item-text-wrap" href="#/tab/product/{{product.productLink}}">
+                <img ng-src="{{product.smallThumbnail}}">
+                <h2>{{product.localizedName}}</h2>
+                <small>{{product.price| currency:"EUR "}}</small>
+            </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-view>
