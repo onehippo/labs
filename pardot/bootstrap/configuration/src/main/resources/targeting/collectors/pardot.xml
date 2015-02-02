@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><sv:node xmlns:sv="http://www.jcp.org/jcr/sv/1.0" sv:name="pardot">
+  <sv:property sv:name="jcr:primaryType" sv:type="Name">
+    <sv:value>targeting:collector</sv:value>
+  </sv:property>
+  <sv:property sv:name="targeting:className" sv:type="String">
+    <sv:value>com.onehippo.campus.world.targeting.PardotCollector</sv:value>
+  </sv:property>
+  <sv:property sv:name="email" sv:type="String">
+    <sv:value>myemail@example.com</sv:value>
+  </sv:property>
+  <sv:property sv:name="password" sv:type="String">
+    <sv:value>mypassword</sv:value>
+  </sv:property>
+  <sv:property sv:name="user_key" sv:type="String">
+    <sv:value>myuserkey</sv:value>
+  </sv:property>
+  <sv:property sv:name="account" sv:type="Long">
+    <sv:value>12345</sv:value>
+  </sv:property>
+</sv:node>

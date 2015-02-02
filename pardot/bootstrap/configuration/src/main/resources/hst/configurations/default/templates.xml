@@ -1,0 +1,664 @@
+<?xml version="1.0" encoding="UTF-8"?><sv:node xmlns:sv="http://www.jcp.org/jcr/sv/1.0" xmlns:h="http://www.onehippo.org/jcr/xmlimport" sv:name="hst:templates" h:merge="combine">
+  <sv:node sv:name="blog-author-posts.ftl">
+    <sv:property sv:name="jcr:primaryType" sv:type="Name">
+      <sv:value>hst:template</sv:value>
+    </sv:property>
+    <sv:property sv:name="hst:script" sv:type="String">
+      <sv:value>    &lt;#include "../../hst:default/hst:templates/imports.ftl"&gt;
+&lt;#--
+  Copyright 2014 Hippo B.V. (http://www.onehippo.com)
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+   http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+--&gt;
+&lt;#-- @ftlvariable name="item" type="com.onehippo.campus.world.beans.Blogpost" --&gt;
+&lt;#-- @ftlvariable name="author" type="com.onehippo.campus.world.beans.Author" --&gt;
+&lt;#-- @ftlvariable name="pageable" type="org.onehippo.cms7.essentials.components.paging.Pageable" --&gt;
+
+&lt;@hst.setBundle basename="essentials.blog"/&gt;
+&lt;#if pageable??&gt;
+&lt;div class="panel panel-default"&gt;
+    &lt;div class="panel-heading"&gt;
+        &lt;h3 class="panel-title"&gt;&lt;@fmt.message key="blog.moreby"/&gt;&amp;nbsp;${author.fullName}&lt;/h3&gt;
+    &lt;/div&gt;
+    &lt;#if pagebale?? &amp;&amp; pageable.total &gt; 0&gt;
+        &lt;div class="panel-body"&gt;
+            &lt;#list pageable.items as item&gt;
+                &lt;@hst.link hippobean=item var="link"/&gt;
+                &lt;p&gt;&lt;a href="${link}"&gt;${item.title}&lt;/a&gt;&lt;/p&gt;
+            &lt;/#list&gt;
+        &lt;/div&gt;
+    &lt;#else&gt;
+        &lt;div class="panel-body"&gt;
+            &lt;p&gt;&lt;fmt:message key="blog.notfound"/&gt;&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/#if&gt;
+&lt;/div&gt;
+&lt;#-- @ftlvariable id="editMode" type="java.lang.Boolean"--&gt;
+&lt;#elseif editMode&gt;
+    &lt;img src="&lt;@hst.link path='/images/essentials/catalog-component-icons/blogposts-by-author.png'/&gt;"&gt; Click to edit Blogposts by Author
+&lt;/#if&gt;
+</sv:value>
+    </sv:property>
+  </sv:node>
+  <sv:node sv:name="blog-list.ftl">
+    <sv:property sv:name="jcr:primaryType" sv:type="Name">
+      <sv:value>hst:template</sv:value>
+    </sv:property>
+    <sv:property sv:name="hst:script" sv:type="String">
+      <sv:value>    &lt;#include "../../hst:default/hst:templates/imports.ftl"&gt;
+&lt;#--
+  Copyright 2014 Hippo B.V. (http://www.onehippo.com)
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+   http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+--&gt;
+&lt;#-- @ftlvariable name="pageable" type="org.onehippo.cms7.essentials.components.paging.Pageable" --&gt;
+&lt;#if pageable??&gt;
+    &lt;#list pageable.items as item&gt;
+        &lt;@hst.link var="link" hippobean=item /&gt;
+    &lt;article class="has-edit-button"&gt;
+        &lt;@hst.cmseditlink hippobean=item/&gt;
+        &lt;h3&gt;&lt;a href="${link}"&gt;${item.title}&lt;/a&gt;&lt;/h3&gt;
+        &lt;#if item.publicationDate?? &amp;&amp; item.publicationDate.time??&gt;
+            &lt;p&gt;&lt;@fmt.formatDate value=item.publicationDate.time type="both" dateStyle="medium" timeStyle="short"/&gt;&lt;/p&gt;
+        &lt;/#if&gt;
+        &lt;p&gt;${item.introduction}&lt;/p&gt;
+    &lt;/article&gt;
+    &lt;/#list&gt;
+    &lt;#if pageable.showPagination??&gt;
+    &lt;#include "../../hst:default/hst:templates/pagination.ftl"&gt;
+    &lt;/#if&gt;
+&lt;#-- @ftlvariable id="editMode" type="java.lang.Boolean"--&gt;
+&lt;#elseif editMode&gt;
+    &lt;img src="&lt;@hst.link path='/images/essentials/catalog-component-icons/blog-list.png'/&gt;"&gt; Click to edit Blog List
+&lt;/#if&gt;</sv:value>
+    </sv:property>
+  </sv:node>
+  <sv:node sv:name="image-component.ftl">
+    <sv:property sv:name="jcr:primaryType" sv:type="Name">
+      <sv:value>hst:template</sv:value>
+    </sv:property>
+    <sv:property sv:name="hst:script" sv:type="String">
+      <sv:value>    &lt;#include "../../hst:default/hst:templates/imports.ftl"&gt;
+&lt;#--
+  Copyright 2014 Hippo B.V. (http://www.onehippo.com)
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+   http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+--&gt;
+&lt;#-- @ftlvariable name="document" type="org.hippoecm.hst.content.beans.standard.HippoGalleryImageSetBean" --&gt;
+&lt;#if document??&gt;
+&lt;@hst.link var="img" hippobean=document.original/&gt;
+    &lt;img src="${img}" title="${document.fileName}" alt="${document.fileName}"/&gt;
+&lt;#-- @ftlvariable id="editMode" type="java.lang.Boolean"--&gt;
+&lt;#elseif editMode&gt;
+    &lt;img src="&lt;@hst.link path="/images/essentials/catalog-component-icons/image.png" /&gt;"&gt; Click to edit Image
+&lt;/#if&gt;
+
+</sv:value>
+    </sv:property>
+  </sv:node>
+  <sv:node sv:name="contentpage-main.ftl">
+    <sv:property sv:name="jcr:primaryType" sv:type="Name">
+      <sv:value>hst:template</sv:value>
+    </sv:property>
+    <sv:property sv:name="hst:script" sv:type="String">
+      <sv:value>    &lt;#include "../../hst:default/hst:templates/imports.ftl"&gt;
+&lt;#--
+  Copyright 2014 Hippo B.V. (http://www.onehippo.com)
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+   http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+--&gt;
+&lt;#-- @ftlvariable name="document" type="com.onehippo.campus.world.beans.ContentDocument" --&gt;
+&lt;#if document??&gt;
+  &lt;@hst.link var="link" hippobean=document/&gt;
+  &lt;article class="has-edit-button"&gt;
+    &lt;@hst.cmseditlink hippobean=document/&gt;
+    &lt;h3&gt;&lt;a href="${link}"&gt;${document.title}&lt;/a&gt;&lt;/h3&gt;
+    &lt;#if document.publicationDate??&gt;
+      &lt;p&gt;
+        &lt;@fmt.formatDate value=document.publicationDate.time type="both" dateStyle="medium" timeStyle="short"/&gt;
+      &lt;/p&gt;
+    &lt;/#if&gt;
+    &lt;#if document.introduction??&gt;
+      &lt;p&gt;
+        ${document.introduction}
+      &lt;/p&gt;
+    &lt;/#if&gt;
+    &lt;@hst.html hippohtml=document.content/&gt;
+  &lt;/article&gt;
+&lt;#-- @ftlvariable id="editMode" type="java.lang.Boolean"--&gt;
+&lt;#elseif editMode&gt;
+  &lt;img src="&lt;@hst.link path="/images/essentials/catalog-component-icons/simple-content.png" /&gt;"&gt; Click to edit Simple Content
+&lt;/#if&gt;</sv:value>
+    </sv:property>
+  </sv:node>
+  <sv:node sv:name="eventslist-main-eventslist.ftl">
+    <sv:property sv:name="jcr:primaryType" sv:type="Name">
+      <sv:value>hst:template</sv:value>
+    </sv:property>
+    <sv:property sv:name="hst:script" sv:type="String">
+      <sv:value>    &lt;#include "../../hst:default/hst:templates/imports.ftl"&gt;
+&lt;#--
+  Copyright 2014 Hippo B.V. (http://www.onehippo.com)
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+   http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+--&gt;
+&lt;#-- @ftlvariable name="item" type="com.onehippo.campus.world.beans.EventsDocument" --&gt;
+&lt;#-- @ftlvariable name="pageable" type="org.onehippo.cms7.essentials.components.paging.Pageable" --&gt;
+&lt;#if pageable?? &amp;&amp; pageable.items?has_content&gt;
+    &lt;#list pageable.items as item&gt;
+        &lt;@hst.link var="link" hippobean=item /&gt;
+    &lt;article class="has-edit-button"&gt;
+        &lt;@hst.cmseditlink hippobean=item/&gt;
+        &lt;h3&gt;&lt;a href="${link}"&gt;${item.title}&lt;/a&gt;&lt;/h3&gt;
+        &lt;#if item.date?? &amp;&amp; item.date.time??&gt;
+            &lt;p&gt;&lt;@fmt.formatDate value=item.date.time type="both" dateStyle="medium" timeStyle="short"/&gt;&lt;/p&gt;
+        &lt;/#if&gt;
+        &lt;#if item.enddate?? &amp;&amp; item.endDate.time??&gt;
+            &lt;p&gt;&lt;@fmt.formatDate value=item.endDate.time type="both" dateStyle="medium" timeStyle="short"/&gt;&lt;/p&gt;
+        &lt;/#if&gt;
+        &lt;p&gt;${item.location}&lt;/p&gt;
+        &lt;p&gt;${item.introduction}&lt;/p&gt;
+    &lt;/article&gt;
+    &lt;/#list&gt;
+    &lt;#if pageable.showPagination??&gt;
+    &lt;#include "../../hst:default/hst:templates/pagination.ftl"&gt;
+    &lt;/#if&gt;
+&lt;#-- @ftlvariable id="editMode" type="java.lang.Boolean"--&gt;
+&lt;#elseif editMode&gt;
+  &lt;img src="&lt;@hst.link path='/images/essentials/catalog-component-icons/events-list.png'/&gt;"&gt; Click to edit Event List
+&lt;/#if&gt;
+
+</sv:value>
+    </sv:property>
+  </sv:node>
+  <sv:node sv:name="blog-facet.ftl">
+    <sv:property sv:name="jcr:primaryType" sv:type="Name">
+      <sv:value>hst:template</sv:value>
+    </sv:property>
+    <sv:property sv:name="hst:script" sv:type="String">
+      <sv:value>&lt;#include "../../hst:default/hst:templates/imports.ftl"&gt;
+&lt;#--
+  Copyright 2014 Hippo B.V. (http://www.onehippo.com)
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+   http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+--&gt;
+&lt;#-- @ftlvariable name="facets" type="org.hippoecm.hst.content.beans.standard.HippoFacetNavigationBean" --&gt;
+&lt;#-- @ftlvariable name="facetLimit" type="java.lang.Integer" --&gt;
+&lt;#-- @ftlvariable name="query" type="java.lang.String" --&gt;
+&lt;@hst.setBundle basename="essentials.facets"/&gt;
+&lt;form action="&lt;@hst.actionURL /&gt;" method="get"&gt;
+  &lt;div class="row form-group"&gt;
+    &lt;div class="col-xs-8"&gt;
+    &lt;#if query??&gt;
+      &lt;input type="search" value="${query}" name="query" class="form-control" placeholder="&lt;@fmt.message key='facets.placeholder'/&gt;"&gt;
+    &lt;#else&gt;
+      &lt;input type="search" value="" name="query" class="form-control" placeholder="&lt;@fmt.message key='facets.placeholder'/&gt;"&gt;
+    &lt;/#if&gt;
+    &lt;/div&gt;
+    &lt;div class="col-xs-4"&gt;
+      &lt;button type="submit" class="btn btn-primary pull-right"&gt;&lt;@fmt.message key='facets.searchbutton'/&gt;&lt;/button&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/form&gt;
+&lt;#if facets??&gt;
+  &lt;#assign facetLimit = 50&gt;
+
+  &lt;ul class="nav nav-list"&gt;
+    &lt;#list facets.folders as facetvalue&gt;
+      &lt;#if facetvalue.folders?? &amp;&amp; (facetvalue.folders?size &gt; 0)&gt;
+        &lt;li&gt;&lt;label class="nav-header"&gt;${facetvalue.name}&lt;/label&gt;
+          &lt;ul class="nav nav-list"&gt;
+            &lt;#list facetvalue.folders as item&gt;
+              &lt;#if (item.leaf?? &amp;&amp; item.leaf &amp;&amp; (item.count &gt; 0))&gt;
+                &lt;@hst.facetnavigationlink  current=facets remove=item var="removeLink"/&gt;
+                &lt;li class="active"&gt;
+                  &lt;a href="${removeLink}"&gt;${item.name}&amp;nbsp;&lt;span class="alert-danger"&gt;&lt;@fmt.message key='facets.remove'/&gt;&lt;/span&gt;&lt;/a&gt;
+                &lt;/li&gt;
+              &lt;#else&gt;
+                &lt;@hst.link var="link" hippobean=item navigationStateful=true/&gt;
+                &lt;li &lt;#if (item_index &gt;= facetLimit)&gt;class="extra"&lt;/#if&gt;&gt;
+                  &lt;a href="${link}"&gt;${item.name}&amp;nbsp;&lt;span&gt;(${item.count})&lt;/span&gt;&lt;/a&gt;
+                &lt;/li&gt;
+              &lt;/#if&gt;
+            &lt;/#list&gt;
+          &lt;/ul&gt;
+        &lt;/li&gt;
+      &lt;/#if&gt;
+    &lt;/#list&gt;
+  &lt;/ul&gt;
+&lt;#-- @ftlvariable id="editMode" type="java.lang.Boolean"--&gt;
+&lt;#elseif editMode&gt;
+&lt;img src="&lt;@hst.link path='/images/essentials/catalog-component-icons/facets.png'/&gt;"&gt; Click to edit Facets
+&lt;/#if&gt;</sv:value>
+    </sv:property>
+  </sv:node>
+  <sv:node sv:name="video-component.ftl">
+    <sv:property sv:name="jcr:primaryType" sv:type="Name">
+      <sv:value>hst:template</sv:value>
+    </sv:property>
+    <sv:property sv:name="hst:script" sv:type="String">
+      <sv:value>&lt;#include "../../hst:default/hst:templates/imports.ftl"&gt;
+&lt;#--
+  Copyright 2014 Hippo B.V. (http://www.onehippo.com)
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+   http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+--&gt;
+
+&lt;#-- @ftlvariable name="document" type="com.onehippo.campus.world.beans.Video" --&gt;
+&lt;#-- @ftlvariable name="cparam" type="org.onehippo.cms7.essentials.components.info.EssentialsVideoComponentInfo"--%&gt; --&gt;
+&lt;#if document??&gt;
+  &lt;h3&gt;${document.title}&lt;/h3&gt;
+  &lt;iframe width="${cparam.width}" height="${cparam.height}" src="${document.link}" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+  &lt;p&gt;${document.description}&lt;/p&gt;
+&lt;#-- @ftlvariable id="editMode" type="java.lang.Boolean"--&gt;
+&lt;#elseif editMode&gt;
+&lt;img src="&lt;@hst.link path="/images/essentials/catalog-component-icons/video.png" /&gt;"&gt; Click to edit Video
+&lt;/#if&gt;
+</sv:value>
+    </sv:property>
+  </sv:node>
+  <sv:node sv:name="essentials-menu.ftl">
+    <sv:property sv:name="jcr:primaryType" sv:type="Name">
+      <sv:value>hst:template</sv:value>
+    </sv:property>
+    <sv:property sv:name="hst:script" sv:type="String">
+      <sv:value>    &lt;#include "../../hst:default/hst:templates/imports.ftl"&gt;
+&lt;#--
+  Copyright 2014 Hippo B.V. (http://www.onehippo.com)
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+   http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+--&gt;
+&lt;#-- @ftlvariable name="menu" type="org.hippoecm.hst.core.sitemenu.HstSiteMenu" --&gt;
+&lt;#if menu??&gt;
+&lt;ul class="nav nav-pills"&gt;
+    &lt;#list menu.siteMenuItems as item&gt;
+        &lt;#if  item.selected || item.expanded&gt;
+            &lt;li class="active"&gt;&lt;a href="&lt;@hst.link link=item.hstLink/&gt;"&gt;${item.name}&lt;/a&gt;&lt;/li&gt;
+        &lt;#else&gt;
+            &lt;li&gt;&lt;a href="&lt;@hst.link link=item.hstLink/&gt;"&gt;${item.name}&lt;/a&gt;&lt;/li&gt;
+        &lt;/#if&gt;
+    &lt;/#list&gt;
+&lt;/ul&gt;
+&lt;@hst.cmseditmenu menu=menu/&gt;
+&lt;#-- @ftlvariable id="editMode" type="java.lang.Boolean"--&gt;
+&lt;#elseif editMode&gt;
+&lt;img src="&lt;@hst.link path="/images/essentials/catalog-component-icons/menu.png" /&gt;"&gt; Click to edit Menu
+&lt;/#if&gt;</sv:value>
+    </sv:property>
+  </sv:node>
+  <sv:node sv:name="list-component.ftl">
+    <sv:property sv:name="jcr:primaryType" sv:type="Name">
+      <sv:value>hst:template</sv:value>
+    </sv:property>
+    <sv:property sv:name="hst:script" sv:type="String">
+      <sv:value>    &lt;#include "../../hst:default/hst:templates/imports.ftl"&gt;
+&lt;#--
+  Copyright 2014 Hippo B.V. (http://www.onehippo.com)
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+   http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+--&gt;
+&lt;#-- @ftlvariable name="pageable" type="org.onehippo.cms7.essentials.components.paging.Pageable" --&gt;
+&lt;#if pageable?? &amp;&amp; pageable.items?has_content&gt;
+  &lt;#list pageable.items as item&gt;
+    &lt;#if item.title??&gt;
+      &lt;@hst.link var="link" hippobean=item /&gt;
+      &lt;article class="has-edit-button"&gt;
+        &lt;@hst.cmseditlink hippobean=item/&gt;
+        &lt;h3&gt;&lt;a href="${link}"&gt;${item.title}&lt;/a&gt;&lt;/h3&gt;
+        &lt;#if item.introduction??&gt;
+          &lt;p&gt;${item.introduction}&lt;/p&gt;
+        &lt;/#if&gt;
+      &lt;/article&gt;
+    &lt;/#if&gt;
+  &lt;/#list&gt;
+  &lt;#if pageable.showPagination&gt;
+    &lt;#include "../../hst:default/hst:templates/pagination.ftl"&gt;
+  &lt;/#if&gt;
+&lt;#-- @ftlvariable id="editMode" type="java.lang.Boolean"--&gt;
+&lt;#elseif editMode&gt;
+  &lt;img src="&lt;@hst.link path='/images/essentials/catalog-component-icons/generic-list.png'/&gt;"&gt; Click to edit Generic List
+&lt;/#if&gt;
+</sv:value>
+    </sv:property>
+  </sv:node>
+  <sv:node sv:name="imports.ftl">
+    <sv:property sv:name="jcr:primaryType" sv:type="Name">
+      <sv:value>hst:template</sv:value>
+    </sv:property>
+    <sv:property sv:name="hst:script" sv:type="String">
+      <sv:value>&lt;#ftl encoding="UTF-8"&gt;
+&lt;#--
+  Copyright 2014 Hippo B.V. (http://www.onehippo.com)
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+   http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+--&gt;
+&lt;#assign hst=JspTaglibs["http://www.hippoecm.org/jsp/hst/core"] &gt;
+&lt;#assign fmt=JspTaglibs ["http://java.sun.com/jsp/jstl/fmt"] &gt;
+
+&lt;@hst.defineObjects /&gt;
+</sv:value>
+    </sv:property>
+  </sv:node>
+  <sv:node sv:name="search-box.ftl">
+    <sv:property sv:name="jcr:primaryType" sv:type="Name">
+      <sv:value>hst:template</sv:value>
+    </sv:property>
+    <sv:property sv:name="hst:script" sv:type="String">
+      <sv:value>    &lt;#include "../../hst:default/hst:templates/imports.ftl"&gt;
+&lt;#--
+  Copyright 2014 Hippo B.V. (http://www.onehippo.com)
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+   http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+--&gt;
+
+&lt;@hst.setBundle basename="essentials.searchbox"/&gt;
+&lt;form class="navbar-form" role="search" action="&lt;@hst.link siteMapItemRefId="search" /&gt;" method="get"&gt;
+    &lt;div class="input-group"&gt;
+        &lt;input type="text" class="form-control" placeholder="&lt;@fmt.message key='searchbox.placeholder'/&gt;" name="query"&gt;
+        &lt;div class="input-group-btn"&gt;
+            &lt;button class="btn btn-default" type="submit"&gt;&lt;i class="glyphicon glyphicon-search"&gt;&lt;/i&gt;&lt;/button&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/form&gt;
+</sv:value>
+    </sv:property>
+  </sv:node>
+  <sv:node sv:name="essentials-carousel.ftl">
+    <sv:property sv:name="jcr:primaryType" sv:type="Name">
+      <sv:value>hst:template</sv:value>
+    </sv:property>
+    <sv:property sv:name="hst:script" sv:type="String">
+      <sv:value>    &lt;#include "../../hst:default/hst:templates/imports.ftl"&gt;
+&lt;#--
+  Copyright 2014 Hippo B.V. (http://www.onehippo.com)
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+   http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+--&gt;
+&lt;#-- @ftlvariable name="item" type="com.onehippo.campus.world.beans.Banner" --&gt;
+&lt;#-- @ftlvariable name="pageable" type="org.onehippo.cms7.essentials.components.paging.Pageable" --&gt;
+&lt;#-- @ftlvariable name="cparam" type="org.onehippo.cms7.essentials.components.info.EssentialsCarouselComponentInfo" --&gt;
+&lt;#if pageable?? &amp;&amp; pageable.items?has_content&gt;
+    &lt;#if cparam.pause&gt;
+        &lt;#assign pauseCarousel = 'hover'/&gt;
+    &lt;#else&gt;
+        &lt;#assign pauseCarousel = ''/&gt;
+    &lt;/#if&gt;
+    &lt;div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="${cparam.interval?c}"
+         data-pause="${pauseCarousel}" data-wrap="${cparam.cycle?string}"&gt;
+        &lt;ol class="carousel-indicators"&gt;
+            &lt;#list 0..(pageable.total-1) as index&gt;
+                &lt;#if index==0&gt;
+                    &lt;li data-target="#myCarousel" data-slide-to="${index}" class="active"&gt;&lt;/li&gt;
+                &lt;#else&gt;
+                    &lt;li data-target="#myCarousel" data-slide-to="${index}"&gt;&lt;/li&gt;
+                &lt;/#if&gt;
+            &lt;/#list&gt;
+        &lt;/ol&gt;
+        &lt;div class="carousel-inner"&gt;
+            &lt;#list pageable.items as item&gt;
+                &lt;#if item_index==0&gt;
+                    &lt;#assign active = ' active'/&gt;
+                &lt;#else&gt;
+                    &lt;#assign active = ''/&gt;
+                &lt;/#if&gt;
+                &lt;div class="item${active}"&gt;
+                    &lt;img src="&lt;@hst.link hippobean=item.image /&gt;" alt="${item.title}"/&gt;
+                    &lt;div class="carousel-caption"&gt;
+                        &lt;h3&gt;${item.title}&lt;/h3&gt;
+                        &lt;@hst.html hippohtml=item.content/&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/#list&gt;
+        &lt;/div&gt;
+        &lt;#if cparam.showNavigation&gt;
+            &lt;a class="left carousel-control" href="#myCarousel" data-slide="prev"&gt;&lt;span class="glyphicon glyphicon-chevron-left"&gt;&lt;/span&gt;&lt;/a&gt;
+            &lt;a class="right carousel-control" href="#myCarousel" data-slide="next"&gt;&lt;span class="glyphicon glyphicon-chevron-right"&gt;&lt;/span&gt;&lt;/a&gt;
+        &lt;/#if&gt;
+    &lt;/div&gt;
+    &lt;style type="text/css"&gt;
+        /* Carousel base class */
+        .carousel {
+            height: ${cparam.carouselHeight}px;
+            /*width: ${cparam.carouselWidth}px;*/
+            margin-bottom: 60px;
+        }
+
+        /* Since positioning the image, we need to help out the caption */
+        .carousel-caption {
+            z-index: 10;
+        }
+
+        /* Declare heights because of positioning of img element */
+        .carousel .item {
+            height: ${cparam.carouselHeight}px;
+            background-color: ${cparam.carouselBackgroundColor};
+        }
+
+        /* center images*/
+        .carousel-inner &gt; .item &gt; img {
+            margin: 0 auto;
+        }
+    &lt;/style&gt;
+
+    &lt;@hst.headContribution category="htmlBodyEnd"&gt;
+    &lt;script type="text/javascript" src="&lt;@hst.link path="/js/jquery-2.1.0.min.js"/&gt;"&gt;&lt;/script&gt;
+    &lt;/@hst.headContribution&gt;
+    &lt;@hst.headContribution category="htmlBodyEnd"&gt;
+    &lt;script type="text/javascript" src="&lt;@hst.link path="/js/bootstrap.min.js"/&gt;"&gt;&lt;/script&gt;
+    &lt;/@hst.headContribution&gt;
+&lt;#elseif editMode&gt;
+  &lt;img src="&lt;@hst.link path='/images/essentials/catalog-component-icons/carousel.png'/&gt;"&gt; Click to edit Carousel
+&lt;/#if&gt;
+</sv:value>
+    </sv:property>
+  </sv:node>
+  <sv:node sv:name="pagination.ftl">
+    <sv:property sv:name="jcr:primaryType" sv:type="Name">
+      <sv:value>hst:template</sv:value>
+    </sv:property>
+    <sv:property sv:name="hst:script" sv:type="String">
+      <sv:value>&lt;#--
+  Copyright 2014 Hippo B.V. (http://www.onehippo.com)
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+   http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+--&gt;
+&lt;#-- @ftlvariable name="pageable" type="org.onehippo.cms7.essentials.components.paging.Pageable" --&gt;
+&lt;#include "../../hst:default/hst:templates/imports.ftl"&gt;
+&lt;#if pageable??&gt;
+&lt;ul class="pagination"&gt;
+    &lt;li class="disabled"&gt;&lt;a href="#"&gt;${pageable.total} document(s)&lt;/a&gt;&lt;/li&gt;
+  &lt;#if pageable.totalPages gt 1&gt;
+    &lt;#list pageable.pageNumbersArray as pageNr&gt;
+        &lt;@hst.renderURL var="pageUrl"&gt;
+            &lt;@hst.param name="page" value="${pageNr}"/&gt;
+            &lt;@hst.param name="pageSize" value="${pageable.pageSize}"/&gt;
+        &lt;/@hst.renderURL&gt;
+        &lt;#if (pageNr_index==0 &amp;&amp; pageable.previous)&gt;
+            &lt;@hst.renderURL var="pageUrlPrevious"&gt;
+                &lt;@hst.param name="page" value="${pageable.previousPage}"/&gt;
+                &lt;@hst.param name="pageSize" value="${pageable.pageSize}"/&gt;
+            &lt;/@hst.renderURL&gt;
+            &lt;li&gt;&lt;a href="${pageUrlPrevious}"&gt;previous&lt;/a&gt;&lt;/li&gt;
+        &lt;/#if&gt;
+        &lt;#if pageable.currentPage == pageNr&gt;
+            &lt;li class="active"&gt;&lt;a href="#"&gt;${pageNr}&lt;/a&gt;&lt;/li&gt;
+        &lt;#else &gt;
+            &lt;li&gt;&lt;a href="${pageUrl}"&gt;${pageNr}&lt;/a&gt;&lt;/li&gt;
+        &lt;/#if&gt;
+
+        &lt;#if !pageNr_has_next &amp;&amp; pageable.next&gt;
+            &lt;@hst.renderURL var="pageUrlNext"&gt;
+                &lt;@hst.param name="page" value="${pageable.nextPage}"/&gt;
+                &lt;@hst.param name="pageSize" value="${pageable.pageSize}"/&gt;
+            &lt;/@hst.renderURL&gt;
+            &lt;li&gt;&lt;a href="${pageUrlNext}"&gt;next&lt;/a&gt;&lt;/li&gt;
+        &lt;/#if&gt;
+    &lt;/#list&gt;
+  &lt;/#if&gt;
+&lt;/ul&gt;
+&lt;/#if&gt;</sv:value>
+    </sv:property>
+  </sv:node>
+  <sv:node sv:name="essentials-banner.ftl">
+    <sv:property sv:name="jcr:primaryType" sv:type="Name">
+      <sv:value>hst:template</sv:value>
+    </sv:property>
+    <sv:property sv:name="hst:script" sv:type="String">
+      <sv:value>    &lt;#include "../../hst:default/hst:templates/imports.ftl"&gt;
+&lt;#--
+  Copyright 2014 Hippo B.V. (http://www.onehippo.com)
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+   http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+--&gt;
+&lt;#-- @ftlvariable name="document" type="com.onehippo.campus.world.beans.Banner" --&gt;
+&lt;#if document??&gt;
+&lt;div class="row"&gt;
+    &lt;a href="&lt;@hst.link hippobean=document.link /&gt;"&gt;&lt;img src="&lt;@hst.link hippobean=document.image /&gt;" alt="${document.title}"/&gt;&lt;/a&gt;
+&lt;/div&gt;
+&lt;#elseif editMode&gt;
+  &lt;img src="&lt;@hst.link path='/images/essentials/catalog-component-icons/banner.png'/&gt;"&gt; Click to edit Banner
+&lt;/#if&gt;
+</sv:value>
+    </sv:property>
+  </sv:node>
+</sv:node>

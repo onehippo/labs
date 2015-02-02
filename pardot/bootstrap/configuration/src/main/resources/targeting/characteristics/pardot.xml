@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><sv:node xmlns:sv="http://www.jcp.org/jcr/sv/1.0" sv:name="pardot">
+  <sv:property sv:name="jcr:primaryType" sv:type="Name">
+    <sv:value>targeting:characteristic</sv:value>
+  </sv:property>
+  <sv:property sv:name="targeting:collector" sv:type="String">
+    <sv:value>pardot</sv:value>
+  </sv:property>
+  <sv:property sv:name="targeting:scorerClassName" sv:type="String">
+    <sv:value>com.onehippo.campus.world.targeting.PardotListScorer</sv:value>
+  </sv:property>
+  <sv:node sv:name="hippo-world-1421677909621">
+    <sv:property sv:name="jcr:primaryType" sv:type="Name">
+      <sv:value>targeting:targetgroup</sv:value>
+    </sv:property>
+    <sv:property sv:name="targeting:name" sv:type="String">
+      <sv:value>Hippo World</sv:value>
+    </sv:property>
+    <sv:property sv:name="targeting:propertynames" sv:type="String" sv:multiple="true">
+      <sv:value>Hippo World 2015 Participants</sv:value>
+    </sv:property>
+  </sv:node>
+</sv:node>

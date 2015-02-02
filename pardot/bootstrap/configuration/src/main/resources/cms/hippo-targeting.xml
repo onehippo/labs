@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sv:node xmlns:sv="http://www.jcp.org/jcr/sv/1.0" sv:name="characteristic-pardot">
+  <sv:property sv:name="jcr:primaryType" sv:type="Name">
+    <sv:value>frontend:plugin</sv:value>
+  </sv:property>
+  <sv:property sv:name="characteristic" sv:type="String">
+    <sv:value>pardot</sv:value>
+  </sv:property>
+  <sv:property sv:name="collector" sv:type="String">
+    <sv:value>pardot</sv:value>
+  </sv:property>
+  <sv:property sv:name="plugin.class" sv:type="String">
+    <sv:value>com.onehippo.campus.world.targeting.PardotCharacteristicPlugin</sv:value>
+  </sv:property>
+  <sv:property sv:name="visitor.segment.visible" sv:type="Boolean">
+    <sv:value>true</sv:value>
+  </sv:property>
+</sv:node>
