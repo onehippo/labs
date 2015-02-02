@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<sv:node xmlns:ae="http://www.onehippo.org/jcr/autoexport/1.0" xmlns:sv="http://www.jcp.org/jcr/sv/1.0" ae:id="world" sv:name="hippo:initialize">
+<sv:node xmlns:ae="http://www.onehippo.org/jcr/autoexport/1.0" xmlns:sv="http://www.jcp.org/jcr/sv/1.0" ae:id="europe" sv:name="hippo:initialize">
   <sv:property sv:name="jcr:primaryType" sv:type="Name">
     <sv:value>hippo:initializefolder</sv:value>
   </sv:property>
 
-  <sv:node sv:name="world-content">
+  <sv:node sv:name="europe-content">
     <sv:property sv:name="jcr:primaryType" sv:type="Name">
       <sv:value>hippo:initializeitem</sv:value>
     </sv:property>
@@ -20,7 +20,7 @@
   </sv:node>
 
   <!-- Content -->
-  <sv:node sv:name="world-documents">
+  <sv:node sv:name="europe-documents">
     <sv:property sv:name="jcr:primaryType" sv:type="Name">
       <sv:value>hippo:initializeitem</sv:value>
     </sv:property>
@@ -28,7 +28,7 @@
       <sv:value>30400</sv:value>
     </sv:property>
     <sv:property sv:name="hippo:contentresource" sv:type="String">
-      <sv:value>content/documents/world.xml</sv:value>
+      <sv:value>content/documents/europe.xml</sv:value>
     </sv:property>
     <sv:property sv:name="hippo:contentroot" sv:type="String">
       <sv:value>/content/documents</sv:value>
@@ -36,7 +36,7 @@
   </sv:node>
 
   <!-- Gallery -->
-  <sv:node sv:name="world-gallery">
+  <sv:node sv:name="europe-gallery">
     <sv:property sv:name="jcr:primaryType" sv:type="Name">
       <sv:value>hippo:initializeitem</sv:value>
     </sv:property>
@@ -44,14 +44,14 @@
       <sv:value>30500</sv:value>
     </sv:property>
     <sv:property sv:name="hippo:contentresource" sv:type="String">
-      <sv:value>content/gallery/world.xml</sv:value>
+      <sv:value>content/gallery/europe.xml</sv:value>
     </sv:property>
     <sv:property sv:name="hippo:contentroot" sv:type="String">
       <sv:value>/content/gallery</sv:value>
     </sv:property>
   </sv:node>
 
-<sv:node sv:name="world-content-documents-administration-labels">
+<sv:node sv:name="europe-content-documents-administration-labels">
     <sv:property sv:name="jcr:primaryType" sv:type="Name">
       <sv:value>hippo:initializeitem</sv:value>
     </sv:property>
@@ -65,7 +65,7 @@
       <sv:value>/content/documents/administration</sv:value>
     </sv:property>
   </sv:node>
-  <sv:node sv:name="world-content-gallery-world-banners">
+  <sv:node sv:name="europe-content-gallery-europe-banners">
     <sv:property sv:name="jcr:primaryType" sv:type="Name">
       <sv:value>hippo:initializeitem</sv:value>
     </sv:property>
@@ -73,13 +73,13 @@
       <sv:value>30501.0</sv:value>
     </sv:property>
     <sv:property sv:name="hippo:contentresource" sv:type="String">
-      <sv:value>content/gallery/world/banners.xml</sv:value>
+      <sv:value>content/gallery/europe/banners.xml</sv:value>
     </sv:property>
     <sv:property sv:name="hippo:contentroot" sv:type="String">
-      <sv:value>/content/gallery/world</sv:value>
+      <sv:value>/content/gallery/europe</sv:value>
     </sv:property>
   </sv:node>
-  <sv:node sv:name="world-content-documents-world-banners">
+  <sv:node sv:name="europe-content-documents-europe-banners">
     <sv:property sv:name="jcr:primaryType" sv:type="Name">
       <sv:value>hippo:initializeitem</sv:value>
     </sv:property>
@@ -87,13 +87,13 @@
       <sv:value>30401.0</sv:value>
     </sv:property>
     <sv:property sv:name="hippo:contentresource" sv:type="String">
-      <sv:value>content/documents/world/banners.xml</sv:value>
+      <sv:value>content/documents/europe/banners.xml</sv:value>
     </sv:property>
     <sv:property sv:name="hippo:contentroot" sv:type="String">
-      <sv:value>/content/documents/world</sv:value>
+      <sv:value>/content/documents/europe</sv:value>
     </sv:property>
   </sv:node>
-  <sv:node sv:name="world-content-documents-administration">
+  <sv:node sv:name="europe-content-documents-administration">
     <sv:property sv:name="jcr:primaryType" sv:type="Name">
       <sv:value>hippo:initializeitem</sv:value>
     </sv:property>
@@ -107,7 +107,7 @@
       <sv:value>/content/documents</sv:value>
     </sv:property>
   </sv:node>
-  <sv:node sv:name="world-content-documents-world-events">
+  <sv:node sv:name="europe-content-documents-europe-events">
     <sv:property sv:name="jcr:primaryType" sv:type="Name">
       <sv:value>hippo:initializeitem</sv:value>
     </sv:property>
@@ -115,13 +115,13 @@
       <sv:value>30401.0</sv:value>
     </sv:property>
     <sv:property sv:name="hippo:contentresource" sv:type="String">
-      <sv:value>content/documents/world/events.xml</sv:value>
+      <sv:value>content/documents/europe/events.xml</sv:value>
     </sv:property>
     <sv:property sv:name="hippo:contentroot" sv:type="String">
-      <sv:value>/content/documents/world</sv:value>
+      <sv:value>/content/documents/europe</sv:value>
     </sv:property>
   </sv:node>
-  <sv:node sv:name="world-content-gallery-world-samples">
+  <sv:node sv:name="europe-content-gallery-europe-samples">
     <sv:property sv:name="jcr:primaryType" sv:type="Name">
       <sv:value>hippo:initializeitem</sv:value>
     </sv:property>
@@ -129,13 +129,13 @@
       <sv:value>30501.0</sv:value>
     </sv:property>
     <sv:property sv:name="hippo:contentresource" sv:type="String">
-      <sv:value>content/gallery/world/samples.xml</sv:value>
+      <sv:value>content/gallery/europe/samples.xml</sv:value>
     </sv:property>
     <sv:property sv:name="hippo:contentroot" sv:type="String">
-      <sv:value>/content/gallery/world</sv:value>
+      <sv:value>/content/gallery/europe</sv:value>
     </sv:property>
   </sv:node>
-  <sv:node sv:name="world-content-documents-world-content">
+  <sv:node sv:name="europe-content-documents-europe-content">
     <sv:property sv:name="jcr:primaryType" sv:type="Name">
       <sv:value>hippo:initializeitem</sv:value>
     </sv:property>
@@ -143,13 +143,13 @@
       <sv:value>30401.0</sv:value>
     </sv:property>
     <sv:property sv:name="hippo:contentresource" sv:type="String">
-      <sv:value>content/documents/world/content.xml</sv:value>
+      <sv:value>content/documents/europe/content.xml</sv:value>
     </sv:property>
     <sv:property sv:name="hippo:contentroot" sv:type="String">
-      <sv:value>/content/documents/world</sv:value>
+      <sv:value>/content/documents/europe</sv:value>
     </sv:property>
   </sv:node>
-  <sv:node sv:name="world-content-documents-world-videos">
+  <sv:node sv:name="europe-content-documents-europe-videos">
     <sv:property sv:name="jcr:primaryType" sv:type="Name">
       <sv:value>hippo:initializeitem</sv:value>
     </sv:property>
@@ -157,13 +157,13 @@
       <sv:value>30401.0</sv:value>
     </sv:property>
     <sv:property sv:name="hippo:contentresource" sv:type="String">
-      <sv:value>content/documents/world/videos.xml</sv:value>
+      <sv:value>content/documents/europe/videos.xml</sv:value>
     </sv:property>
     <sv:property sv:name="hippo:contentroot" sv:type="String">
-      <sv:value>/content/documents/world</sv:value>
+      <sv:value>/content/documents/europe</sv:value>
     </sv:property>
   </sv:node>
-<sv:node sv:name="world-content-documents-administration-robots">
+<sv:node sv:name="europe-content-documents-administration-robots">
     <sv:property sv:name="jcr:primaryType" sv:type="Name">
       <sv:value>hippo:initializeitem</sv:value>
     </sv:property>
@@ -177,7 +177,7 @@
       <sv:value>/content/documents/administration</sv:value>
     </sv:property>
   </sv:node>
-  <sv:node sv:name="world-content-documents-world-blog">
+  <sv:node sv:name="europe-content-documents-europe-blog">
     <sv:property sv:name="jcr:primaryType" sv:type="Name">
       <sv:value>hippo:initializeitem</sv:value>
     </sv:property>
@@ -185,13 +185,13 @@
       <sv:value>30401.0</sv:value>
     </sv:property>
     <sv:property sv:name="hippo:contentresource" sv:type="String">
-      <sv:value>content/documents/world/blog.xml</sv:value>
+      <sv:value>content/documents/europe/blog.xml</sv:value>
     </sv:property>
     <sv:property sv:name="hippo:contentroot" sv:type="String">
-      <sv:value>/content/documents/world</sv:value>
+      <sv:value>/content/documents/europe</sv:value>
     </sv:property>
   </sv:node>
-  <sv:node sv:name="world-content-documents-world-blogFacets">
+  <sv:node sv:name="europe-content-documents-europe-blogFacets">
     <sv:property sv:name="jcr:primaryType" sv:type="Name">
       <sv:value>hippo:initializeitem</sv:value>
     </sv:property>
@@ -199,13 +199,13 @@
       <sv:value>30401.0</sv:value>
     </sv:property>
     <sv:property sv:name="hippo:contentresource" sv:type="String">
-      <sv:value>content/documents/world/blogFacets.xml</sv:value>
+      <sv:value>content/documents/europe/blogFacets.xml</sv:value>
     </sv:property>
     <sv:property sv:name="hippo:contentroot" sv:type="String">
-      <sv:value>/content/documents/world</sv:value>
+      <sv:value>/content/documents/europe</sv:value>
     </sv:property>
   </sv:node>
-  <sv:node sv:name="world-content-documents-world-polls">
+  <sv:node sv:name="europe-content-documents-europe-polls">
     <sv:property sv:name="jcr:primaryType" sv:type="Name">
       <sv:value>hippo:initializeitem</sv:value>
     </sv:property>
@@ -213,10 +213,10 @@
       <sv:value>30401.0</sv:value>
     </sv:property>
     <sv:property sv:name="hippo:contentresource" sv:type="String">
-      <sv:value>content/documents/world/polls.xml</sv:value>
+      <sv:value>content/documents/europe/polls.xml</sv:value>
     </sv:property>
     <sv:property sv:name="hippo:contentroot" sv:type="String">
-      <sv:value>/content/documents/world</sv:value>
+      <sv:value>/content/documents/europe</sv:value>
     </sv:property>
   </sv:node>
 </sv:node>

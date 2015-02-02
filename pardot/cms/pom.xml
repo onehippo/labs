@@ -4,13 +4,15 @@
   <modelVersion>4.0.0</modelVersion>
   <parent>
     <groupId>com.onehippo.campus</groupId>
-    <artifactId>world</artifactId>
+    <artifactId>hippo-europe</artifactId>
     <version>1.01.00-SNAPSHOT</version>
   </parent>
-  <artifactId>world-cms</artifactId>
+
+  <artifactId>hippo-europe-cms</artifactId>
   <packaging>war</packaging>
-  <name>Hippo World CMS</name>
-  <description>Hippo World CMS</description>
+  <name>Hippo Europe CMS</name>
+  <description>Hippo Europe CMS</description>
+
   <dependencies>
     <dependency>
       <groupId>org.onehippo.cms7.hst.dependencies</groupId>
@@ -37,12 +39,12 @@
     </dependency>
     <dependency>
       <groupId>com.onehippo.campus</groupId>
-      <artifactId>world-bootstrap-configuration</artifactId>
+      <artifactId>hippo-europe-bootstrap-configuration</artifactId>
       <version>${project.version}</version>
     </dependency>
     <dependency>
       <groupId>com.onehippo.campus</groupId>
-      <artifactId>world-bootstrap-content</artifactId>
+      <artifactId>hippo-europe-bootstrap-content</artifactId>
       <version>${project.version}</version>
     </dependency>
     <dependency>

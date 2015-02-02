@@ -5,8 +5,8 @@
   version="2.5"
   id="site">
 
-  <display-name>Hippo World site</display-name>
-  <description>Hippo World site</description>
+  <display-name>Hippo Europe site</display-name>
+  <description>Hippo Europe site</description>
 
   <jsp-config>
     <jsp-property-group>
@@ -55,7 +55,7 @@
   -->
   <context-param>
     <param-name>hst-beans-annotated-classes</param-name>
-    <param-value>classpath*:com/onehippo/campus/world/**/*.class
+    <param-value>classpath*:com/onehippo/campus/europe/**/*.class
       ,classpath*:org/onehippo/**/*.class
       ,classpath*:com/onehippo/**/*.class
       ,classpath*:org/onehippo/forge/**/*.class

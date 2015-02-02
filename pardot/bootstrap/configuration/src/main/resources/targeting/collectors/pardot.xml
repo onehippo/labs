@@ -3,7 +3,7 @@
     <sv:value>targeting:collector</sv:value>
   </sv:property>
   <sv:property sv:name="targeting:className" sv:type="String">
-    <sv:value>com.onehippo.campus.world.targeting.PardotCollector</sv:value>
+    <sv:value>com.onehippo.campus.europe.targeting.PardotCollector</sv:value>
   </sv:property>
   <sv:property sv:name="email" sv:type="String">
     <sv:value>myemail@example.com</sv:value>

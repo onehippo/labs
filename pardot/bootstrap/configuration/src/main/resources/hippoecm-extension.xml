@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<sv:node xmlns:ae="http://www.onehippo.org/jcr/autoexport/1.0" xmlns:sv="http://www.jcp.org/jcr/sv/1.0" ae:id="world" sv:name="hippo:initialize">
+<sv:node xmlns:ae="http://www.onehippo.org/jcr/autoexport/1.0" xmlns:sv="http://www.jcp.org/jcr/sv/1.0" ae:id="europe" sv:name="hippo:initialize">
   <sv:property sv:name="jcr:primaryType" sv:type="Name">
     <sv:value>hippo:initializefolder</sv:value>
   </sv:property>
 
   <!-- Autoexport module configuration -->
-  <sv:node sv:name="world-autoexport-module">
+  <sv:node sv:name="europe-autoexport-module">
     <sv:property sv:name="jcr:primaryType" sv:type="Name">
       <sv:value>hippo:initializeitem</sv:value>
     </sv:property>
@@ -21,7 +21,7 @@
   </sv:node>
 
   <!-- Eventlogcleanup module configuration -->
-  <sv:node sv:name="world-eventlogcleanup-module">
+  <sv:node sv:name="europe-eventlogcleanup-module">
     <sv:property sv:name="jcr:primaryType" sv:type="Name">
       <sv:value>hippo:initializeitem</sv:value>
     </sv:property>
@@ -37,7 +37,7 @@
   </sv:node>
 
   <!-- Document types -->
-  <sv:node sv:name="world">
+  <sv:node sv:name="europe">
     <sv:property sv:name="jcr:primaryType" sv:type="Name">
       <sv:value>hippo:initializeitem</sv:value>
     </sv:property>
@@ -45,13 +45,13 @@
       <sv:value>30000.1</sv:value>
     </sv:property>
     <sv:property sv:name="hippo:namespace" sv:type="String">
-      <sv:value>http://www.onehippo.org/world/nt/1.0</sv:value>
+      <sv:value>http://www.onehippo.org/europe/nt/1.0</sv:value>
     </sv:property>
     <sv:property sv:name="hippo:nodetypesresource" sv:type="String">
-      <sv:value>namespaces/world.cnd</sv:value>
+      <sv:value>namespaces/europe.cnd</sv:value>
     </sv:property>
   </sv:node>
-  <sv:node sv:name="world-namespace">
+  <sv:node sv:name="europe-namespace">
     <sv:property sv:name="jcr:primaryType" sv:type="Name">
       <sv:value>hippo:initializeitem</sv:value>
     </sv:property>
@@ -59,13 +59,13 @@
       <sv:value>30051</sv:value>
     </sv:property>
     <sv:property sv:name="hippo:contentresource" sv:type="String">
-      <sv:value>namespaces/world.xml</sv:value>
+      <sv:value>namespaces/europe.xml</sv:value>
     </sv:property>
     <sv:property sv:name="hippo:contentroot" sv:type="String">
       <sv:value>/hippo:namespaces</sv:value>
     </sv:property>
   </sv:node>
-  <sv:node sv:name="world-basedocument-namespace">
+  <sv:node sv:name="europe-basedocument-namespace">
     <sv:property sv:name="jcr:primaryType" sv:type="Name">
       <sv:value>hippo:initializeitem</sv:value>
     </sv:property>
@@ -73,15 +73,15 @@
       <sv:value>30051.1</sv:value>
     </sv:property>
     <sv:property sv:name="hippo:contentresource" sv:type="String">
-      <sv:value>namespaces/world/basedocument.xml</sv:value>
+      <sv:value>namespaces/europe/basedocument.xml</sv:value>
     </sv:property>
     <sv:property sv:name="hippo:contentroot" sv:type="String">
-      <sv:value>/hippo:namespaces/world</sv:value>
+      <sv:value>/hippo:namespaces/europe</sv:value>
     </sv:property>
   </sv:node>
 
   <!-- hst configuration nodes -->
-  <sv:node sv:name="world-hst-hosts">
+  <sv:node sv:name="europe-hst-hosts">
     <sv:property sv:name="jcr:primaryType" sv:type="Name">
       <sv:value>hippo:initializeitem</sv:value>
     </sv:property>
@@ -96,7 +96,7 @@
     </sv:property>
   </sv:node>
 
-  <sv:node sv:name="world-hst-channels">
+  <sv:node sv:name="europe-hst-channels">
     <sv:property sv:name="jcr:primaryType" sv:type="Name">
       <sv:value>hippo:initializeitem</sv:value>
     </sv:property>
@@ -110,7 +110,7 @@
       <sv:value>/hst:hst</sv:value>
     </sv:property>
   </sv:node>
-  <sv:node sv:name="world-hst-sites">
+  <sv:node sv:name="europe-hst-sites">
     <sv:property sv:name="jcr:primaryType" sv:type="Name">
       <sv:value>hippo:initializeitem</sv:value>
     </sv:property>
@@ -124,7 +124,7 @@
       <sv:value>/hst:hst</sv:value>
     </sv:property>
   </sv:node>
-  <sv:node sv:name="world-hst-configurations">
+  <sv:node sv:name="europe-hst-configurations">
     <sv:property sv:name="jcr:primaryType" sv:type="Name">
       <sv:value>hippo:initializeitem</sv:value>
     </sv:property>
@@ -141,7 +141,7 @@
 
   <!-- Website -->
   <!-- workspace configuration nodes -->
-  <sv:node sv:name="world-workspace">
+  <sv:node sv:name="europe-workspace">
     <sv:property sv:name="jcr:primaryType" sv:type="Name">
       <sv:value>hippo:initializeitem</sv:value>
     </sv:property>
@@ -149,14 +149,14 @@
       <sv:value>30056</sv:value>
     </sv:property>
     <sv:property sv:name="hippo:contentresource" sv:type="String">
-      <sv:value>hst/configurations/world/workspace.xml</sv:value>
+      <sv:value>hst/configurations/europe/workspace.xml</sv:value>
     </sv:property>
     <sv:property sv:name="hippo:contentroot" sv:type="String">
-      <sv:value>/hst:hst/hst:configurations/world</sv:value>
+      <sv:value>/hst:hst/hst:configurations/europe</sv:value>
     </sv:property>
   </sv:node>
 
-  <sv:node sv:name="world-workspace-sitemap">
+  <sv:node sv:name="europe-workspace-sitemap">
     <sv:property sv:name="jcr:primaryType" sv:type="Name">
       <sv:value>hippo:initializeitem</sv:value>
     </sv:property>
@@ -164,14 +164,14 @@
       <sv:value>30057</sv:value>
     </sv:property>
     <sv:property sv:name="hippo:contentresource" sv:type="String">
-      <sv:value>hst/configurations/world/workspace/sitemap.xml</sv:value>
+      <sv:value>hst/configurations/europe/workspace/sitemap.xml</sv:value>
     </sv:property>
     <sv:property sv:name="hippo:contentroot" sv:type="String">
-      <sv:value>/hst:hst/hst:configurations/world/hst:workspace</sv:value>
+      <sv:value>/hst:hst/hst:configurations/europe/hst:workspace</sv:value>
     </sv:property>
   </sv:node>
 
-  <sv:node sv:name="world-workspace-pages">
+  <sv:node sv:name="europe-workspace-pages">
     <sv:property sv:name="jcr:primaryType" sv:type="Name">
       <sv:value>hippo:initializeitem</sv:value>
     </sv:property>
@@ -179,14 +179,14 @@
       <sv:value>30058</sv:value>
     </sv:property>
     <sv:property sv:name="hippo:contentresource" sv:type="String">
-      <sv:value>hst/configurations/world/workspace/pages.xml</sv:value>
+      <sv:value>hst/configurations/europe/workspace/pages.xml</sv:value>
     </sv:property>
     <sv:property sv:name="hippo:contentroot" sv:type="String">
-      <sv:value>/hst:hst/hst:configurations/world/hst:workspace</sv:value>
+      <sv:value>/hst:hst/hst:configurations/europe/hst:workspace</sv:value>
     </sv:property>
   </sv:node>
 
-  <sv:node sv:name="world-workspace-sitemenus">
+  <sv:node sv:name="europe-workspace-sitemenus">
     <sv:property sv:name="jcr:primaryType" sv:type="Name">
       <sv:value>hippo:initializeitem</sv:value>
     </sv:property>
@@ -194,14 +194,14 @@
       <sv:value>30059</sv:value>
     </sv:property>
     <sv:property sv:name="hippo:contentresource" sv:type="String">
-      <sv:value>hst/configurations/world/workspace/sitemenus.xml</sv:value>
+      <sv:value>hst/configurations/europe/workspace/sitemenus.xml</sv:value>
     </sv:property>
     <sv:property sv:name="hippo:contentroot" sv:type="String">
-      <sv:value>/hst:hst/hst:configurations/world/hst:workspace</sv:value>
+      <sv:value>/hst:hst/hst:configurations/europe/hst:workspace</sv:value>
     </sv:property>
   </sv:node>
 
-  <sv:node sv:name="world-workspace-containers">
+  <sv:node sv:name="europe-workspace-containers">
     <sv:property sv:name="jcr:primaryType" sv:type="Name">
       <sv:value>hippo:initializeitem</sv:value>
     </sv:property>
@@ -209,15 +209,15 @@
       <sv:value>30060</sv:value>
     </sv:property>
     <sv:property sv:name="hippo:contentresource" sv:type="String">
-      <sv:value>hst/configurations/world/workspace/containers.xml</sv:value>
+      <sv:value>hst/configurations/europe/workspace/containers.xml</sv:value>
     </sv:property>
     <sv:property sv:name="hippo:contentroot" sv:type="String">
-      <sv:value>/hst:hst/hst:configurations/world/hst:workspace</sv:value>
+      <sv:value>/hst:hst/hst:configurations/europe/hst:workspace</sv:value>
     </sv:property>
   </sv:node>
 
   <!-- NON workspace configuration for website -->
-  <sv:node sv:name="world-sitemap">
+  <sv:node sv:name="europe-sitemap">
     <sv:property sv:name="jcr:primaryType" sv:type="Name">
       <sv:value>hippo:initializeitem</sv:value>
     </sv:property>
@@ -225,13 +225,13 @@
       <sv:value>30070</sv:value>
     </sv:property>
     <sv:property sv:name="hippo:contentresource" sv:type="String">
-      <sv:value>hst/configurations/world/sitemap.xml</sv:value>
+      <sv:value>hst/configurations/europe/sitemap.xml</sv:value>
     </sv:property>
     <sv:property sv:name="hippo:contentroot" sv:type="String">
-      <sv:value>/hst:hst/hst:configurations/world</sv:value>
+      <sv:value>/hst:hst/hst:configurations/europe</sv:value>
     </sv:property>
   </sv:node>
-  <sv:node sv:name="world-sitemenus">
+  <sv:node sv:name="europe-sitemenus">
     <sv:property sv:name="jcr:primaryType" sv:type="Name">
       <sv:value>hippo:initializeitem</sv:value>
     </sv:property>
@@ -239,14 +239,14 @@
       <sv:value>30057</sv:value>
     </sv:property>
     <sv:property sv:name="hippo:contentresource" sv:type="String">
-      <sv:value>hst/configurations/world/sitemenus.xml</sv:value>
+      <sv:value>hst/configurations/europe/sitemenus.xml</sv:value>
     </sv:property>
     <sv:property sv:name="hippo:contentroot" sv:type="String">
-      <sv:value>/hst:hst/hst:configurations/world</sv:value>
+      <sv:value>/hst:hst/hst:configurations/europe</sv:value>
     </sv:property>
   </sv:node>
 
-  <sv:node sv:name="world-configuration-prototypepages">
+  <sv:node sv:name="europe-configuration-prototypepages">
     <sv:property sv:name="jcr:primaryType" sv:type="Name">
       <sv:value>hippo:initializeitem</sv:value>
     </sv:property>
@@ -254,14 +254,14 @@
       <sv:value>30071</sv:value>
     </sv:property>
     <sv:property sv:name="hippo:contentresource" sv:type="String">
-      <sv:value>hst/configurations/world/prototypepages.xml</sv:value>
+      <sv:value>hst/configurations/europe/prototypepages.xml</sv:value>
     </sv:property>
     <sv:property sv:name="hippo:contentroot" sv:type="String">
-      <sv:value>/hst:hst/hst:configurations/world</sv:value>
+      <sv:value>/hst:hst/hst:configurations/europe</sv:value>
     </sv:property>
   </sv:node>
 
-  <sv:node sv:name="world-configuration-abstractpages">
+  <sv:node sv:name="europe-configuration-abstractpages">
     <sv:property sv:name="jcr:primaryType" sv:type="Name">
       <sv:value>hippo:initializeitem</sv:value>
     </sv:property>
@@ -269,14 +269,14 @@
       <sv:value>30073</sv:value>
     </sv:property>
     <sv:property sv:name="hippo:contentresource" sv:type="String">
-      <sv:value>hst/configurations/world/abstractpages.xml</sv:value>
+      <sv:value>hst/configurations/europe/abstractpages.xml</sv:value>
     </sv:property>
     <sv:property sv:name="hippo:contentroot" sv:type="String">
-      <sv:value>/hst:hst/hst:configurations/world</sv:value>
+      <sv:value>/hst:hst/hst:configurations/europe</sv:value>
     </sv:property>
   </sv:node>
 
-  <sv:node sv:name="world-configuration-pages">
+  <sv:node sv:name="europe-configuration-pages">
     <sv:property sv:name="jcr:primaryType" sv:type="Name">
       <sv:value>hippo:initializeitem</sv:value>
     </sv:property>
@@ -284,13 +284,13 @@
       <sv:value>30075</sv:value>
     </sv:property>
     <sv:property sv:name="hippo:contentresource" sv:type="String">
-      <sv:value>hst/configurations/world/pages.xml</sv:value>
+      <sv:value>hst/configurations/europe/pages.xml</sv:value>
     </sv:property>
     <sv:property sv:name="hippo:contentroot" sv:type="String">
-      <sv:value>/hst:hst/hst:configurations/world</sv:value>
+      <sv:value>/hst:hst/hst:configurations/europe</sv:value>
     </sv:property>
   </sv:node>
-  <sv:node sv:name="world-configuration-components">
+  <sv:node sv:name="europe-configuration-components">
     <sv:property sv:name="jcr:primaryType" sv:type="Name">
       <sv:value>hippo:initializeitem</sv:value>
     </sv:property>
@@ -298,13 +298,13 @@
       <sv:value>30083</sv:value>
     </sv:property>
     <sv:property sv:name="hippo:contentresource" sv:type="String">
-      <sv:value>hst/configurations/world/components.xml</sv:value>
+      <sv:value>hst/configurations/europe/components.xml</sv:value>
     </sv:property>
     <sv:property sv:name="hippo:contentroot" sv:type="String">
-      <sv:value>/hst:hst/hst:configurations/world</sv:value>
+      <sv:value>/hst:hst/hst:configurations/europe</sv:value>
     </sv:property>
   </sv:node>
-  <sv:node sv:name="world-configuration-templates">
+  <sv:node sv:name="europe-configuration-templates">
     <sv:property sv:name="jcr:primaryType" sv:type="Name">
       <sv:value>hippo:initializeitem</sv:value>
     </sv:property>
@@ -312,13 +312,13 @@
       <sv:value>30090</sv:value>
     </sv:property>
     <sv:property sv:name="hippo:contentresource" sv:type="String">
-      <sv:value>hst/configurations/world/templates.xml</sv:value>
+      <sv:value>hst/configurations/europe/templates.xml</sv:value>
     </sv:property>
     <sv:property sv:name="hippo:contentroot" sv:type="String">
-      <sv:value>/hst:hst/hst:configurations/world</sv:value>
+      <sv:value>/hst:hst/hst:configurations/europe</sv:value>
     </sv:property>
   </sv:node>
-  <sv:node sv:name="world-configuration-catalog">
+  <sv:node sv:name="europe-configuration-catalog">
     <sv:property sv:name="jcr:primaryType" sv:type="Name">
       <sv:value>hippo:initializeitem</sv:value>
     </sv:property>
@@ -326,15 +326,15 @@
       <sv:value>30091</sv:value>
     </sv:property>
     <sv:property sv:name="hippo:contentresource" sv:type="String">
-      <sv:value>hst/configurations/world/catalog.xml</sv:value>
+      <sv:value>hst/configurations/europe/catalog.xml</sv:value>
     </sv:property>
     <sv:property sv:name="hippo:contentroot" sv:type="String">
-      <sv:value>/hst:hst/hst:configurations/world</sv:value>
+      <sv:value>/hst:hst/hst:configurations/europe</sv:value>
     </sv:property>
   </sv:node>
 
   <!-- Security and default available users -->
-  <sv:node sv:name="world-user-editor">
+  <sv:node sv:name="europe-user-editor">
     <sv:property sv:name="jcr:primaryType" sv:type="Name">
       <sv:value>hippo:initializeitem</sv:value>
     </sv:property>
@@ -348,7 +348,7 @@
       <sv:value>33000.2</sv:value>
     </sv:property>
   </sv:node>
-  <sv:node sv:name="world-user-author">
+  <sv:node sv:name="europe-user-author">
     <sv:property sv:name="jcr:primaryType" sv:type="Name">
       <sv:value>hippo:initializeitem</sv:value>
     </sv:property>
@@ -362,7 +362,7 @@
       <sv:value>33000.3</sv:value>
     </sv:property>
   </sv:node>
-  <sv:node sv:name="world-user-liveuser">
+  <sv:node sv:name="europe-user-liveuser">
     <sv:property sv:name="jcr:primaryType" sv:type="Name">
       <sv:value>hippo:initializeitem</sv:value>
     </sv:property>
@@ -376,7 +376,7 @@
       <sv:value>33000.4</sv:value>
     </sv:property>
   </sv:node>
-  <sv:node sv:name="world-user-previewuser">
+  <sv:node sv:name="europe-user-previewuser">
     <sv:property sv:name="jcr:primaryType" sv:type="Name">
       <sv:value>hippo:initializeitem</sv:value>
     </sv:property>
@@ -390,7 +390,7 @@
       <sv:value>33000.5</sv:value>
     </sv:property>
   </sv:node>
-  <sv:node sv:name="world-user-configuser">
+  <sv:node sv:name="europe-user-configuser">
     <sv:property sv:name="jcr:primaryType" sv:type="Name">
       <sv:value>hippo:initializeitem</sv:value>
     </sv:property>
@@ -404,7 +404,7 @@
       <sv:value>33000.6</sv:value>
     </sv:property>
   </sv:node>
-  <sv:node sv:name="world-user-sitewriter">
+  <sv:node sv:name="europe-user-sitewriter">
     <sv:property sv:name="jcr:primaryType" sv:type="Name">
       <sv:value>hippo:initializeitem</sv:value>
     </sv:property>
@@ -418,7 +418,7 @@
       <sv:value>33000.7</sv:value>
     </sv:property>
   </sv:node>
-  <sv:node sv:name="world-groups-author-add">
+  <sv:node sv:name="europe-groups-author-add">
     <sv:property sv:name="jcr:primaryType" sv:type="Name">
       <sv:value>hippo:initializeitem</sv:value>
     </sv:property>
@@ -432,7 +432,7 @@
       <sv:value>33000.8</sv:value>
     </sv:property>
   </sv:node>
-  <sv:node sv:name="world-groups-editor-add">
+  <sv:node sv:name="europe-groups-editor-add">
     <sv:property sv:name="jcr:primaryType" sv:type="Name">
       <sv:value>hippo:initializeitem</sv:value>
     </sv:property>
@@ -446,7 +446,7 @@
       <sv:value>33000.9</sv:value>
     </sv:property>
   </sv:node>
-  <sv:node sv:name="world-groups-webmaster-add">
+  <sv:node sv:name="europe-groups-webmaster-add">
     <sv:property sv:name="jcr:primaryType" sv:type="Name">
       <sv:value>hippo:initializeitem</sv:value>
     </sv:property>
@@ -461,7 +461,7 @@
     </sv:property>
   </sv:node>
 
-  <sv:node sv:name="world-group-sitewriters">
+  <sv:node sv:name="europe-group-sitewriters">
     <sv:property sv:name="jcr:primaryType" sv:type="Name">
       <sv:value>hippo:initializeitem</sv:value>
     </sv:property>
@@ -475,7 +475,7 @@
       <sv:value>33001.1</sv:value>
     </sv:property>
   </sv:node>
-  <sv:node sv:name="world-group-liveusers">
+  <sv:node sv:name="europe-group-liveusers">
     <sv:property sv:name="jcr:primaryType" sv:type="Name">
       <sv:value>hippo:initializeitem</sv:value>
     </sv:property>
@@ -489,7 +489,7 @@
       <sv:value>33001.2</sv:value>
     </sv:property>
   </sv:node>
-  <sv:node sv:name="world-group-previewusers">
+  <sv:node sv:name="europe-group-previewusers">
     <sv:property sv:name="jcr:primaryType" sv:type="Name">
       <sv:value>hippo:initializeitem</sv:value>
     </sv:property>
@@ -504,7 +504,7 @@
     </sv:property>
   </sv:node>
 
-  <sv:node sv:name="world-sitewriters-readfolders">
+  <sv:node sv:name="europe-sitewriters-readfolders">
     <sv:property sv:name="jcr:primaryType" sv:type="Name">
       <sv:value>hippo:initializeitem</sv:value>
     </sv:property>
@@ -519,7 +519,7 @@
     </sv:property>
   </sv:node>
 
-  <sv:node sv:name="world-previewusers-documents">
+  <sv:node sv:name="europe-previewusers-documents">
     <sv:property sv:name="jcr:primaryType" sv:type="Name">
       <sv:value>hippo:initializeitem</sv:value>
     </sv:property>
@@ -534,7 +534,7 @@
     </sv:property>
   </sv:node>
 
-  <sv:node sv:name="world-liveusers-documents">
+  <sv:node sv:name="europe-liveusers-documents">
     <sv:property sv:name="jcr:primaryType" sv:type="Name">
       <sv:value>hippo:initializeitem</sv:value>
     </sv:property>
@@ -548,7 +548,7 @@
       <sv:value>33001.6</sv:value>
     </sv:property>
   </sv:node>
-  <sv:node sv:name="world-configuser-read-everywhere">
+  <sv:node sv:name="europe-configuser-read-everywhere">
     <sv:property sv:name="jcr:primaryType" sv:type="Name">
       <sv:value>hippo:initializeitem</sv:value>
     </sv:property>
@@ -563,7 +563,7 @@
     </sv:property>
   </sv:node>
 
-<sv:node sv:name="world-hst-hst-hst-configurations-world-hst-pages-homepage">
+<sv:node sv:name="europe-hst-hst-hst-configurations-europe-hst-pages-homepage">
     <sv:property sv:name="jcr:primaryType" sv:type="Name">
       <sv:value>hippo:initializeitem</sv:value>
     </sv:property>
@@ -571,13 +571,13 @@
       <sv:value>30076.0</sv:value>
     </sv:property>
     <sv:property sv:name="hippo:contentresource" sv:type="String">
-      <sv:value>hst/configurations/world/pages/homepage.xml</sv:value>
+      <sv:value>hst/configurations/europe/pages/homepage.xml</sv:value>
     </sv:property>
     <sv:property sv:name="hippo:contentroot" sv:type="String">
-      <sv:value>/hst:hst/hst:configurations/world/hst:pages</sv:value>
+      <sv:value>/hst:hst/hst:configurations/europe/hst:pages</sv:value>
     </sv:property>
   </sv:node>
-  <sv:node sv:name="world-hst-hst-hst-configurations-hst-default-hst-templates">
+  <sv:node sv:name="europe-hst-hst-hst-configurations-hst-default-hst-templates">
     <sv:property sv:name="jcr:primaryType" sv:type="Name">
       <sv:value>hippo:initializeitem</sv:value>
     </sv:property>
@@ -591,7 +591,7 @@
       <sv:value>/hst:hst/hst:configurations/hst:default</sv:value>
     </sv:property>
   </sv:node>
-  <sv:node sv:name="world-hst-hst-hst-configurations-hst-default-hst-catalog">
+  <sv:node sv:name="europe-hst-hst-hst-configurations-hst-default-hst-catalog">
     <sv:property sv:name="jcr:primaryType" sv:type="Name">
       <sv:value>hippo:initializeitem</sv:value>
     </sv:property>
@@ -605,7 +605,7 @@
       <sv:value>/hst:hst/hst:configurations/hst:default</sv:value>
     </sv:property>
   </sv:node>
-  <sv:node sv:name="world-hst-hst-hst-configurations-world-hst-abstractpages-base">
+  <sv:node sv:name="europe-hst-hst-hst-configurations-europe-hst-abstractpages-base">
     <sv:property sv:name="jcr:primaryType" sv:type="Name">
       <sv:value>hippo:initializeitem</sv:value>
     </sv:property>
@@ -613,13 +613,13 @@
       <sv:value>30074.0</sv:value>
     </sv:property>
     <sv:property sv:name="hippo:contentresource" sv:type="String">
-      <sv:value>hst/configurations/world/abstractpages/base.xml</sv:value>
+      <sv:value>hst/configurations/europe/abstractpages/base.xml</sv:value>
     </sv:property>
     <sv:property sv:name="hippo:contentroot" sv:type="String">
-      <sv:value>/hst:hst/hst:configurations/world/hst:abstractpages</sv:value>
+      <sv:value>/hst:hst/hst:configurations/europe/hst:abstractpages</sv:value>
     </sv:property>
   </sv:node>
-  <sv:node sv:name="world-hst-hst-hst-configurations-world-hst-pages-pagenotfound">
+  <sv:node sv:name="europe-hst-hst-hst-configurations-europe-hst-pages-pagenotfound">
     <sv:property sv:name="jcr:primaryType" sv:type="Name">
       <sv:value>hippo:initializeitem</sv:value>
     </sv:property>
@@ -627,13 +627,13 @@
       <sv:value>30076.0</sv:value>
     </sv:property>
     <sv:property sv:name="hippo:contentresource" sv:type="String">
-      <sv:value>hst/configurations/world/pages/pagenotfound.xml</sv:value>
+      <sv:value>hst/configurations/europe/pages/pagenotfound.xml</sv:value>
     </sv:property>
     <sv:property sv:name="hippo:contentroot" sv:type="String">
-      <sv:value>/hst:hst/hst:configurations/world/hst:pages</sv:value>
+      <sv:value>/hst:hst/hst:configurations/europe/hst:pages</sv:value>
     </sv:property>
   </sv:node>
-  <sv:node sv:name="world-hippo-configuration-hippo-queries-hippo-templates-new-banner-document">
+  <sv:node sv:name="europe-hippo-configuration-hippo-queries-hippo-templates-new-banner-document">
     <sv:property sv:name="jcr:primaryType" sv:type="Name">
       <sv:value>hippo:initializeitem</sv:value>
     </sv:property>
@@ -647,7 +647,7 @@
       <sv:value>/hippo:configuration/hippo:queries/hippo:templates</sv:value>
     </sv:property>
   </sv:node>
-  <sv:node sv:name="world-hippo-namespaces-world-bannerdocument">
+  <sv:node sv:name="europe-hippo-namespaces-europe-bannerdocument">
     <sv:property sv:name="jcr:primaryType" sv:type="Name">
       <sv:value>hippo:initializeitem</sv:value>
     </sv:property>
@@ -655,13 +655,13 @@
       <sv:value>30052.0</sv:value>
     </sv:property>
     <sv:property sv:name="hippo:contentresource" sv:type="String">
-      <sv:value>namespaces/world/bannerdocument.xml</sv:value>
+      <sv:value>namespaces/europe/bannerdocument.xml</sv:value>
     </sv:property>
     <sv:property sv:name="hippo:contentroot" sv:type="String">
-      <sv:value>/hippo:namespaces/world</sv:value>
+      <sv:value>/hippo:namespaces/europe</sv:value>
     </sv:property>
   </sv:node>
-  <sv:node sv:name="world-hippo-configuration-hippo-queries-hippo-templates-new-banner-folder">
+  <sv:node sv:name="europe-hippo-configuration-hippo-queries-hippo-templates-new-banner-folder">
     <sv:property sv:name="jcr:primaryType" sv:type="Name">
       <sv:value>hippo:initializeitem</sv:value>
     </sv:property>
@@ -675,7 +675,7 @@
       <sv:value>/hippo:configuration/hippo:queries/hippo:templates</sv:value>
     </sv:property>
   </sv:node>
-  <sv:node sv:name="world-hst-hst-hst-configurations-world-hst-pages-eventspage">
+  <sv:node sv:name="europe-hst-hst-hst-configurations-europe-hst-pages-eventspage">
     <sv:property sv:name="jcr:primaryType" sv:type="Name">
       <sv:value>hippo:initializeitem</sv:value>
     </sv:property>
@@ -683,13 +683,13 @@
       <sv:value>30076.0</sv:value>
     </sv:property>
     <sv:property sv:name="hippo:contentresource" sv:type="String">
-      <sv:value>hst/configurations/world/pages/eventspage.xml</sv:value>
+      <sv:value>hst/configurations/europe/pages/eventspage.xml</sv:value>
     </sv:property>
     <sv:property sv:name="hippo:contentroot" sv:type="String">
-      <sv:value>/hst:hst/hst:configurations/world/hst:pages</sv:value>
+      <sv:value>/hst:hst/hst:configurations/europe/hst:pages</sv:value>
     </sv:property>
   </sv:node>
-  <sv:node sv:name="world-hst-hst-hst-configurations-world-hst-pages-eventslist">
+  <sv:node sv:name="europe-hst-hst-hst-configurations-europe-hst-pages-eventslist">
     <sv:property sv:name="jcr:primaryType" sv:type="Name">
       <sv:value>hippo:initializeitem</sv:value>
     </sv:property>
@@ -697,13 +697,13 @@
       <sv:value>30076.0</sv:value>
     </sv:property>
     <sv:property sv:name="hippo:contentresource" sv:type="String">
-      <sv:value>hst/configurations/world/pages/eventslist.xml</sv:value>
+      <sv:value>hst/configurations/europe/pages/eventslist.xml</sv:value>
     </sv:property>
     <sv:property sv:name="hippo:contentroot" sv:type="String">
-      <sv:value>/hst:hst/hst:configurations/world/hst:pages</sv:value>
+      <sv:value>/hst:hst/hst:configurations/europe/hst:pages</sv:value>
     </sv:property>
   </sv:node>
-  <sv:node sv:name="world-hippo-configuration-hippo-queries-hippo-templates-new-events-document">
+  <sv:node sv:name="europe-hippo-configuration-hippo-queries-hippo-templates-new-events-document">
     <sv:property sv:name="jcr:primaryType" sv:type="Name">
       <sv:value>hippo:initializeitem</sv:value>
     </sv:property>
@@ -717,7 +717,7 @@
       <sv:value>/hippo:configuration/hippo:queries/hippo:templates</sv:value>
     </sv:property>
   </sv:node>
-  <sv:node sv:name="world-hippo-configuration-hippo-queries-hippo-templates-new-events-folder">
+  <sv:node sv:name="europe-hippo-configuration-hippo-queries-hippo-templates-new-events-folder">
     <sv:property sv:name="jcr:primaryType" sv:type="Name">
       <sv:value>hippo:initializeitem</sv:value>
     </sv:property>
@@ -731,7 +731,7 @@
       <sv:value>/hippo:configuration/hippo:queries/hippo:templates</sv:value>
     </sv:property>
   </sv:node>
-  <sv:node sv:name="world-hippo-namespaces-world-eventsdocument">
+  <sv:node sv:name="europe-hippo-namespaces-europe-eventsdocument">
     <sv:property sv:name="jcr:primaryType" sv:type="Name">
       <sv:value>hippo:initializeitem</sv:value>
     </sv:property>
@@ -739,13 +739,13 @@
       <sv:value>30052.0</sv:value>
     </sv:property>
     <sv:property sv:name="hippo:contentresource" sv:type="String">
-      <sv:value>namespaces/world/eventsdocument.xml</sv:value>
+      <sv:value>namespaces/europe/eventsdocument.xml</sv:value>
     </sv:property>
     <sv:property sv:name="hippo:contentroot" sv:type="String">
-      <sv:value>/hippo:namespaces/world</sv:value>
+      <sv:value>/hippo:namespaces/europe</sv:value>
     </sv:property>
   </sv:node>
-  <sv:node sv:name="world-hst-hst-hst-configurations-world-hst-pages-search">
+  <sv:node sv:name="europe-hst-hst-hst-configurations-europe-hst-pages-search">
     <sv:property sv:name="jcr:primaryType" sv:type="Name">
       <sv:value>hippo:initializeitem</sv:value>
     </sv:property>
@@ -753,13 +753,13 @@
       <sv:value>30076.0</sv:value>
     </sv:property>
     <sv:property sv:name="hippo:contentresource" sv:type="String">
-      <sv:value>hst/configurations/world/pages/search.xml</sv:value>
+      <sv:value>hst/configurations/europe/pages/search.xml</sv:value>
     </sv:property>
     <sv:property sv:name="hippo:contentroot" sv:type="String">
-      <sv:value>/hst:hst/hst:configurations/world/hst:pages</sv:value>
+      <sv:value>/hst:hst/hst:configurations/europe/hst:pages</sv:value>
     </sv:property>
   </sv:node>
-  <sv:node sv:name="world-hippo-configuration-hippo-queries-hippo-templates-new-content-folder">
+  <sv:node sv:name="europe-hippo-configuration-hippo-queries-hippo-templates-new-content-folder">
     <sv:property sv:name="jcr:primaryType" sv:type="Name">
       <sv:value>hippo:initializeitem</sv:value>
     </sv:property>
@@ -773,7 +773,7 @@
       <sv:value>/hippo:configuration/hippo:queries/hippo:templates</sv:value>
     </sv:property>
   </sv:node>
-  <sv:node sv:name="world-hst-hst-hst-configurations-world-hst-pages-contentlist">
+  <sv:node sv:name="europe-hst-hst-hst-configurations-europe-hst-pages-contentlist">
     <sv:property sv:name="jcr:primaryType" sv:type="Name">
       <sv:value>hippo:initializeitem</sv:value>
     </sv:property>
@@ -781,13 +781,13 @@
       <sv:value>30076.0</sv:value>
     </sv:property>
     <sv:property sv:name="hippo:contentresource" sv:type="String">
-      <sv:value>hst/configurations/world/pages/contentlist.xml</sv:value>
+      <sv:value>hst/configurations/europe/pages/contentlist.xml</sv:value>
     </sv:property>
     <sv:property sv:name="hippo:contentroot" sv:type="String">
-      <sv:value>/hst:hst/hst:configurations/world/hst:pages</sv:value>
+      <sv:value>/hst:hst/hst:configurations/europe/hst:pages</sv:value>
     </sv:property>
   </sv:node>
-  <sv:node sv:name="world-hst-hst-hst-configurations-world-hst-pages-contentpage">
+  <sv:node sv:name="europe-hst-hst-hst-configurations-europe-hst-pages-contentpage">
     <sv:property sv:name="jcr:primaryType" sv:type="Name">
       <sv:value>hippo:initializeitem</sv:value>
     </sv:property>
@@ -795,13 +795,13 @@
       <sv:value>30076.0</sv:value>
     </sv:property>
     <sv:property sv:name="hippo:contentresource" sv:type="String">
-      <sv:value>hst/configurations/world/pages/contentpage.xml</sv:value>
+      <sv:value>hst/configurations/europe/pages/contentpage.xml</sv:value>
     </sv:property>
     <sv:property sv:name="hippo:contentroot" sv:type="String">
-      <sv:value>/hst:hst/hst:configurations/world/hst:pages</sv:value>
+      <sv:value>/hst:hst/hst:configurations/europe/hst:pages</sv:value>
     </sv:property>
   </sv:node>
-  <sv:node sv:name="world-hippo-namespaces-world-contentdocument">
+  <sv:node sv:name="europe-hippo-namespaces-europe-contentdocument">
     <sv:property sv:name="jcr:primaryType" sv:type="Name">
       <sv:value>hippo:initializeitem</sv:value>
     </sv:property>
@@ -809,13 +809,13 @@
       <sv:value>30052.0</sv:value>
     </sv:property>
     <sv:property sv:name="hippo:contentresource" sv:type="String">
-      <sv:value>namespaces/world/contentdocument.xml</sv:value>
+      <sv:value>namespaces/europe/contentdocument.xml</sv:value>
     </sv:property>
     <sv:property sv:name="hippo:contentroot" sv:type="String">
-      <sv:value>/hippo:namespaces/world</sv:value>
+      <sv:value>/hippo:namespaces/europe</sv:value>
     </sv:property>
   </sv:node>
-  <sv:node sv:name="world-hippo-configuration-hippo-queries-hippo-templates-new-content-document">
+  <sv:node sv:name="europe-hippo-configuration-hippo-queries-hippo-templates-new-content-document">
     <sv:property sv:name="jcr:primaryType" sv:type="Name">
       <sv:value>hippo:initializeitem</sv:value>
     </sv:property>
@@ -829,7 +829,7 @@
       <sv:value>/hippo:configuration/hippo:queries/hippo:templates</sv:value>
     </sv:property>
   </sv:node>
-  <sv:node sv:name="world-hippo-configuration-hippo-queries-hippo-templates-new-video-folder">
+  <sv:node sv:name="europe-hippo-configuration-hippo-queries-hippo-templates-new-video-folder">
     <sv:property sv:name="jcr:primaryType" sv:type="Name">
       <sv:value>hippo:initializeitem</sv:value>
     </sv:property>
@@ -843,7 +843,7 @@
       <sv:value>/hippo:configuration/hippo:queries/hippo:templates</sv:value>
     </sv:property>
   </sv:node>
-  <sv:node sv:name="world-hippo-namespaces-world-video">
+  <sv:node sv:name="europe-hippo-namespaces-europe-video">
     <sv:property sv:name="jcr:primaryType" sv:type="Name">
       <sv:value>hippo:initializeitem</sv:value>
     </sv:property>
@@ -851,13 +851,13 @@
       <sv:value>30052.0</sv:value>
     </sv:property>
     <sv:property sv:name="hippo:contentresource" sv:type="String">
-      <sv:value>namespaces/world/video.xml</sv:value>
+      <sv:value>namespaces/europe/video.xml</sv:value>
     </sv:property>
     <sv:property sv:name="hippo:contentroot" sv:type="String">
-      <sv:value>/hippo:namespaces/world</sv:value>
+      <sv:value>/hippo:namespaces/europe</sv:value>
     </sv:property>
   </sv:node>
-  <sv:node sv:name="world-hippo-configuration-hippo-queries-hippo-templates-new-video-document">
+  <sv:node sv:name="europe-hippo-configuration-hippo-queries-hippo-templates-new-video-document">
     <sv:property sv:name="jcr:primaryType" sv:type="Name">
       <sv:value>hippo:initializeitem</sv:value>
     </sv:property>
@@ -871,7 +871,7 @@
       <sv:value>/hippo:configuration/hippo:queries/hippo:templates</sv:value>
     </sv:property>
   </sv:node>
-<sv:node sv:name="world-hst-hst-hst-configurations-world-hst-pages-blogpage">
+<sv:node sv:name="europe-hst-hst-hst-configurations-europe-hst-pages-blogpage">
     <sv:property sv:name="jcr:primaryType" sv:type="Name">
       <sv:value>hippo:initializeitem</sv:value>
     </sv:property>
@@ -879,13 +879,13 @@
       <sv:value>30076.0</sv:value>
     </sv:property>
     <sv:property sv:name="hippo:contentresource" sv:type="String">
-      <sv:value>hst/configurations/world/pages/blogpage.xml</sv:value>
+      <sv:value>hst/configurations/europe/pages/blogpage.xml</sv:value>
     </sv:property>
     <sv:property sv:name="hippo:contentroot" sv:type="String">
-      <sv:value>/hst:hst/hst:configurations/world/hst:pages</sv:value>
+      <sv:value>/hst:hst/hst:configurations/europe/hst:pages</sv:value>
     </sv:property>
   </sv:node>
-  <sv:node sv:name="world-hippo-configuration-hippo-queries-hippo-templates-new-blog-document">
+  <sv:node sv:name="europe-hippo-configuration-hippo-queries-hippo-templates-new-blog-document">
     <sv:property sv:name="jcr:primaryType" sv:type="Name">
       <sv:value>hippo:initializeitem</sv:value>
     </sv:property>
@@ -899,7 +899,7 @@
       <sv:value>/hippo:configuration/hippo:queries/hippo:templates</sv:value>
     </sv:property>
   </sv:node>
-  <sv:node sv:name="world-hippo-configuration-hippo-queries-hippo-templates-new-blogauthor-folder">
+  <sv:node sv:name="europe-hippo-configuration-hippo-queries-hippo-templates-new-blogauthor-folder">
     <sv:property sv:name="jcr:primaryType" sv:type="Name">
       <sv:value>hippo:initializeitem</sv:value>
     </sv:property>
@@ -913,7 +913,7 @@
       <sv:value>/hippo:configuration/hippo:queries/hippo:templates</sv:value>
     </sv:property>
   </sv:node>
-  <sv:node sv:name="world-hippo-configuration-hippo-queries-hippo-templates-new-poll-folder">
+  <sv:node sv:name="europe-hippo-configuration-hippo-queries-hippo-templates-new-poll-folder">
     <sv:property sv:name="jcr:primaryType" sv:type="Name">
       <sv:value>hippo:initializeitem</sv:value>
     </sv:property>
@@ -927,7 +927,7 @@
       <sv:value>/hippo:configuration/hippo:queries/hippo:templates</sv:value>
     </sv:property>
   </sv:node>
-  <sv:node sv:name="world-hippo-configuration-hippo-queries-hippo-templates-new-blog-folder">
+  <sv:node sv:name="europe-hippo-configuration-hippo-queries-hippo-templates-new-blog-folder">
     <sv:property sv:name="jcr:primaryType" sv:type="Name">
       <sv:value>hippo:initializeitem</sv:value>
     </sv:property>
@@ -941,7 +941,7 @@
       <sv:value>/hippo:configuration/hippo:queries/hippo:templates</sv:value>
     </sv:property>
   </sv:node>
-  <sv:node sv:name="world-hippo-namespaces-world-blogpost">
+  <sv:node sv:name="europe-hippo-namespaces-europe-blogpost">
     <sv:property sv:name="jcr:primaryType" sv:type="Name">
       <sv:value>hippo:initializeitem</sv:value>
     </sv:property>
@@ -949,13 +949,13 @@
       <sv:value>30052.0</sv:value>
     </sv:property>
     <sv:property sv:name="hippo:contentresource" sv:type="String">
-      <sv:value>namespaces/world/blogpost.xml</sv:value>
+      <sv:value>namespaces/europe/blogpost.xml</sv:value>
     </sv:property>
     <sv:property sv:name="hippo:contentroot" sv:type="String">
-      <sv:value>/hippo:namespaces/world</sv:value>
+      <sv:value>/hippo:namespaces/europe</sv:value>
     </sv:property>
   </sv:node>
-  <sv:node sv:name="world-hippo-namespaces-world-account">
+  <sv:node sv:name="europe-hippo-namespaces-europe-account">
     <sv:property sv:name="jcr:primaryType" sv:type="Name">
       <sv:value>hippo:initializeitem</sv:value>
     </sv:property>
@@ -963,13 +963,13 @@
       <sv:value>30052.0</sv:value>
     </sv:property>
     <sv:property sv:name="hippo:contentresource" sv:type="String">
-      <sv:value>namespaces/world/account.xml</sv:value>
+      <sv:value>namespaces/europe/account.xml</sv:value>
     </sv:property>
     <sv:property sv:name="hippo:contentroot" sv:type="String">
-      <sv:value>/hippo:namespaces/world</sv:value>
+      <sv:value>/hippo:namespaces/europe</sv:value>
     </sv:property>
   </sv:node>
-  <sv:node sv:name="world-hst-hst-hst-configurations-world-hst-pages-bloglist">
+  <sv:node sv:name="europe-hst-hst-hst-configurations-europe-hst-pages-bloglist">
     <sv:property sv:name="jcr:primaryType" sv:type="Name">
       <sv:value>hippo:initializeitem</sv:value>
     </sv:property>
@@ -977,13 +977,13 @@
       <sv:value>30076.0</sv:value>
     </sv:property>
     <sv:property sv:name="hippo:contentresource" sv:type="String">
-      <sv:value>hst/configurations/world/pages/bloglist.xml</sv:value>
+      <sv:value>hst/configurations/europe/pages/bloglist.xml</sv:value>
     </sv:property>
     <sv:property sv:name="hippo:contentroot" sv:type="String">
-      <sv:value>/hst:hst/hst:configurations/world/hst:pages</sv:value>
+      <sv:value>/hst:hst/hst:configurations/europe/hst:pages</sv:value>
     </sv:property>
   </sv:node>
-  <sv:node sv:name="world-hst-hst-hst-configurations-world-hst-pages-blog">
+  <sv:node sv:name="europe-hst-hst-hst-configurations-europe-hst-pages-blog">
     <sv:property sv:name="jcr:primaryType" sv:type="Name">
       <sv:value>hippo:initializeitem</sv:value>
     </sv:property>
@@ -991,13 +991,13 @@
       <sv:value>30076.0</sv:value>
     </sv:property>
     <sv:property sv:name="hippo:contentresource" sv:type="String">
-      <sv:value>hst/configurations/world/pages/blog.xml</sv:value>
+      <sv:value>hst/configurations/europe/pages/blog.xml</sv:value>
     </sv:property>
     <sv:property sv:name="hippo:contentroot" sv:type="String">
-      <sv:value>/hst:hst/hst:configurations/world/hst:pages</sv:value>
+      <sv:value>/hst:hst/hst:configurations/europe/hst:pages</sv:value>
     </sv:property>
   </sv:node>
-  <sv:node sv:name="world-hippo-configuration-hippo-queries-hippo-templates-new-blogauthor-document">
+  <sv:node sv:name="europe-hippo-configuration-hippo-queries-hippo-templates-new-blogauthor-document">
     <sv:property sv:name="jcr:primaryType" sv:type="Name">
       <sv:value>hippo:initializeitem</sv:value>
     </sv:property>
@@ -1011,7 +1011,7 @@
       <sv:value>/hippo:configuration/hippo:queries/hippo:templates</sv:value>
     </sv:property>
   </sv:node>
-  <sv:node sv:name="world-hippo-configuration-hippo-queries-hippo-templates-new-poll-document">
+  <sv:node sv:name="europe-hippo-configuration-hippo-queries-hippo-templates-new-poll-document">
     <sv:property sv:name="jcr:primaryType" sv:type="Name">
       <sv:value>hippo:initializeitem</sv:value>
     </sv:property>
@@ -1025,7 +1025,7 @@
       <sv:value>/hippo:configuration/hippo:queries/hippo:templates</sv:value>
     </sv:property>
   </sv:node>
-  <sv:node sv:name="world-hippo-configuration-hippo-modules-essentials-eventbus-listener">
+  <sv:node sv:name="europe-hippo-configuration-hippo-modules-essentials-eventbus-listener">
     <sv:property sv:name="jcr:primaryType" sv:type="Name">
       <sv:value>hippo:initializeitem</sv:value>
     </sv:property>
@@ -1039,7 +1039,7 @@
       <sv:value>/hippo:configuration/hippo:modules</sv:value>
     </sv:property>
   </sv:node>
-  <sv:node sv:name="world-hippo-namespaces-world-author">
+  <sv:node sv:name="europe-hippo-namespaces-europe-author">
     <sv:property sv:name="jcr:primaryType" sv:type="Name">
       <sv:value>hippo:initializeitem</sv:value>
     </sv:property>
@@ -1047,15 +1047,15 @@
       <sv:value>30052.0</sv:value>
     </sv:property>
     <sv:property sv:name="hippo:contentresource" sv:type="String">
-      <sv:value>namespaces/world/author.xml</sv:value>
+      <sv:value>namespaces/europe/author.xml</sv:value>
     </sv:property>
     <sv:property sv:name="hippo:contentroot" sv:type="String">
-      <sv:value>/hippo:namespaces/world</sv:value>
+      <sv:value>/hippo:namespaces/europe</sv:value>
     </sv:property>
   </sv:node>
 
   <!-- targeting -->
-  <sv:node sv:name="world-targeting-characteristics-pardot">
+  <sv:node sv:name="europe-targeting-characteristics-pardot">
     <sv:property sv:name="jcr:primaryType" sv:type="Name">
       <sv:value>hippo:initializeitem</sv:value>
     </sv:property>
@@ -1069,7 +1069,7 @@
       <sv:value>/targeting:targeting/targeting:characteristics</sv:value>
     </sv:property>
   </sv:node>
-  <sv:node sv:name="world-targeting-collectors-pardot">
+  <sv:node sv:name="europe-targeting-collectors-pardot">
     <sv:property sv:name="jcr:primaryType" sv:type="Name">
       <sv:value>hippo:initializeitem</sv:value>
     </sv:property>
@@ -1084,7 +1084,7 @@
     </sv:property>
   </sv:node>
 
-  <sv:node sv:name="world-hippo-targeting-plugin">
+  <sv:node sv:name="europe-hippo-targeting-plugin">
     <sv:property sv:name="jcr:primaryType" sv:type="Name">
       <sv:value>hippo:initializeitem</sv:value>
     </sv:property>

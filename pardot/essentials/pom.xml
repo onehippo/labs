@@ -2,15 +2,18 @@
 <project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <modelVersion>4.0.0</modelVersion>
+
   <parent>
     <groupId>com.onehippo.campus</groupId>
-    <artifactId>world</artifactId>
+    <artifactId>hippo-europe</artifactId>
     <version>1.01.00-SNAPSHOT</version>
   </parent>
-  <artifactId>world-essentials</artifactId>
+
+  <artifactId>hippo-europe-essentials</artifactId>
   <packaging>war</packaging>
-  <name>Hippo World Essentials</name>
-  <description>Hippo World Essentials</description>
+  <name>Hippo Europe Essentials</name>
+  <description>Hippo Europe Essentials</description>
+
   <dependencies>
     <dependency>
       <groupId>org.onehippo.cms7.essentials</groupId>
@@ -25,6 +28,7 @@
       <type>pom</type>
     </dependency>
   </dependencies>
+
   <build>
     <resources>
       <resource>

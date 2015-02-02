@@ -10,7 +10,7 @@
     <sv:value>pardot</sv:value>
   </sv:property>
   <sv:property sv:name="plugin.class" sv:type="String">
-    <sv:value>com.onehippo.campus.world.targeting.PardotCharacteristicPlugin</sv:value>
+    <sv:value>com.onehippo.campus.europe.targeting.PardotCharacteristicPlugin</sv:value>
   </sv:property>
   <sv:property sv:name="visitor.segment.visible" sv:type="Boolean">
     <sv:value>true</sv:value>

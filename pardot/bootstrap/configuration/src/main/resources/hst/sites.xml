@@ -5,12 +5,12 @@
     <sv:value>hst:sites</sv:value>
   </sv:property>
   
-  <sv:node sv:name="world">
+  <sv:node sv:name="europe">
     <sv:property sv:name="jcr:primaryType" sv:type="Name">
       <sv:value>hst:site</sv:value>
     </sv:property>
     <sv:property sv:name="hst:content" sv:type="String">
-      <sv:value>/content/documents/world</sv:value>
+      <sv:value>/content/documents/europe</sv:value>
     </sv:property>
   </sv:node>
 

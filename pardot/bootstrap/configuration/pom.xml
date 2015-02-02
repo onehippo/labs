@@ -4,13 +4,13 @@
 
   <parent>
     <groupId>com.onehippo.campus</groupId>
-    <artifactId>world-bootstrap</artifactId>
+    <artifactId>hippo-europe-bootstrap</artifactId>
     <version>1.01.00-SNAPSHOT</version>
   </parent>
 
-  <name>Hippo World Bootstrap Configuration</name>
-  <description>Hippo World Bootstrap Configuration</description>
-  <artifactId>world-bootstrap-configuration</artifactId>
+  <name>Hippo Europe Bootstrap Configuration</name>
+  <description>Hippo Europe Bootstrap Configuration</description>
+  <artifactId>hippo-europe-bootstrap-configuration</artifactId>
 
   <build>
     <defaultGoal>install</defaultGoal>

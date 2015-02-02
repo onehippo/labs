@@ -6,8 +6,8 @@
     id="cms">
 
   <!-- General configuration -->
-  <display-name>Hippo World CMS</display-name>
-  <description>Hippo World CMS</description>
+  <display-name>Hippo Europe CMS</display-name>
+  <description>Hippo Europe CMS</description>
 
   <context-param>
     <description>The address of the repository</description>

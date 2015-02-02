@@ -4,13 +4,15 @@
   <modelVersion>4.0.0</modelVersion>
   <parent>
     <groupId>com.onehippo.campus</groupId>
-    <artifactId>world</artifactId>
+    <artifactId>hippo-europe</artifactId>
     <version>1.01.00-SNAPSHOT</version>
   </parent>
-  <artifactId>world-site</artifactId>
+
+  <artifactId>hippo-europe-site</artifactId>
   <packaging>war</packaging>
-  <name>Hippo World Site</name>
-  <description>Hippo World Site</description>
+  <name>Hippo Europe Site</name>
+  <description>Hippo Europe Site</description>
+
   <dependencies>
     <dependency>
       <groupId>org.onehippo.cms7.essentials.sdk</groupId>

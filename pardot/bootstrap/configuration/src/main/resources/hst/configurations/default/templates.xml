@@ -20,8 +20,8 @@
   See the License for the specific language governing permissions and
   limitations under the License.
 --&gt;
-&lt;#-- @ftlvariable name="item" type="com.onehippo.campus.world.beans.Blogpost" --&gt;
-&lt;#-- @ftlvariable name="author" type="com.onehippo.campus.world.beans.Author" --&gt;
+&lt;#-- @ftlvariable name="item" type="com.onehippo.campus.europe.beans.Blogpost" --&gt;
+&lt;#-- @ftlvariable name="author" type="com.onehippo.campus.europe.beans.Author" --&gt;
 &lt;#-- @ftlvariable name="pageable" type="org.onehippo.cms7.essentials.components.paging.Pageable" --&gt;
 
 &lt;@hst.setBundle basename="essentials.blog"/&gt;
@@ -147,7 +147,7 @@
   See the License for the specific language governing permissions and
   limitations under the License.
 --&gt;
-&lt;#-- @ftlvariable name="document" type="com.onehippo.campus.world.beans.ContentDocument" --&gt;
+&lt;#-- @ftlvariable name="document" type="com.onehippo.campus.europe.beans.ContentDocument" --&gt;
 &lt;#if document??&gt;
   &lt;@hst.link var="link" hippobean=document/&gt;
   &lt;article class="has-edit-button"&gt;
@@ -192,7 +192,7 @@
   See the License for the specific language governing permissions and
   limitations under the License.
 --&gt;
-&lt;#-- @ftlvariable name="item" type="com.onehippo.campus.world.beans.EventsDocument" --&gt;
+&lt;#-- @ftlvariable name="item" type="com.onehippo.campus.europe.beans.EventsDocument" --&gt;
 &lt;#-- @ftlvariable name="pageable" type="org.onehippo.cms7.essentials.components.paging.Pageable" --&gt;
 &lt;#if pageable?? &amp;&amp; pageable.items?has_content&gt;
     &lt;#list pageable.items as item&gt;
@@ -314,7 +314,7 @@
   limitations under the License.
 --&gt;
 
-&lt;#-- @ftlvariable name="document" type="com.onehippo.campus.world.beans.Video" --&gt;
+&lt;#-- @ftlvariable name="document" type="com.onehippo.campus.europe.beans.Video" --&gt;
 &lt;#-- @ftlvariable name="cparam" type="org.onehippo.cms7.essentials.components.info.EssentialsVideoComponentInfo"--%&gt; --&gt;
 &lt;#if document??&gt;
   &lt;h3&gt;${document.title}&lt;/h3&gt;
@@ -494,7 +494,7 @@
   See the License for the specific language governing permissions and
   limitations under the License.
 --&gt;
-&lt;#-- @ftlvariable name="item" type="com.onehippo.campus.world.beans.Banner" --&gt;
+&lt;#-- @ftlvariable name="item" type="com.onehippo.campus.europe.beans.Banner" --&gt;
 &lt;#-- @ftlvariable name="pageable" type="org.onehippo.cms7.essentials.components.paging.Pageable" --&gt;
 &lt;#-- @ftlvariable name="cparam" type="org.onehippo.cms7.essentials.components.info.EssentialsCarouselComponentInfo" --&gt;
 &lt;#if pageable?? &amp;&amp; pageable.items?has_content&gt;
@@ -650,7 +650,7 @@
   See the License for the specific language governing permissions and
   limitations under the License.
 --&gt;
-&lt;#-- @ftlvariable name="document" type="com.onehippo.campus.world.beans.Banner" --&gt;
+&lt;#-- @ftlvariable name="document" type="com.onehippo.campus.europe.beans.Banner" --&gt;
 &lt;#if document??&gt;
 &lt;div class="row"&gt;
     &lt;a href="&lt;@hst.link hippobean=document.link /&gt;"&gt;&lt;img src="&lt;@hst.link hippobean=document.image /&gt;" alt="${document.title}"/&gt;&lt;/a&gt;

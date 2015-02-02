@@ -8,10 +8,10 @@
     <version>7.9.5</version>
   </parent>
 
-  <name>Hippo World</name>
-  <description>Hippo World</description>
+  <name>Hippo Europe</name>
+  <description>Hippo Europe</description>
   <groupId>com.onehippo.campus</groupId>
-  <artifactId>world</artifactId>
+  <artifactId>hippo-europe</artifactId>
   <version>1.01.00-SNAPSHOT</version>
   <packaging>pom</packaging>
 

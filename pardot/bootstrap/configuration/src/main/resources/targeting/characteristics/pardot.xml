@@ -6,17 +6,17 @@
     <sv:value>pardot</sv:value>
   </sv:property>
   <sv:property sv:name="targeting:scorerClassName" sv:type="String">
-    <sv:value>com.onehippo.campus.world.targeting.PardotListScorer</sv:value>
+    <sv:value>com.onehippo.campus.europe.targeting.PardotListScorer</sv:value>
   </sv:property>
-  <sv:node sv:name="hippo-world-1421677909621">
+  <sv:node sv:name="hippo-europe-1421677909621">
     <sv:property sv:name="jcr:primaryType" sv:type="Name">
       <sv:value>targeting:targetgroup</sv:value>
     </sv:property>
     <sv:property sv:name="targeting:name" sv:type="String">
-      <sv:value>Hippo World</sv:value>
+      <sv:value>Hippo Europe</sv:value>
     </sv:property>
     <sv:property sv:name="targeting:propertynames" sv:type="String" sv:multiple="true">
-      <sv:value>Hippo World 2015 Participants</sv:value>
+      <sv:value>Hippo Europe 2015 Participants</sv:value>
     </sv:property>
   </sv:node>
 </sv:node>

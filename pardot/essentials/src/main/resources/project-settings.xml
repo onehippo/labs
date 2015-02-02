@@ -2,10 +2,10 @@
 <project>
     <name>project-settings</name>
     <confirmParams>false</confirmParams>
-    <projectNamespace>world</projectNamespace>
-    <selectedBeansPackage>com.onehippo.campus.world.beans</selectedBeansPackage>
-    <selectedComponentsPackage>com.onehippo.campus.world.components</selectedComponentsPackage>
-    <selectedRestPackage>com.onehippo.campus.world.rest</selectedRestPackage>
+    <projectNamespace>europe</projectNamespace>
+    <selectedBeansPackage>com.onehippo.campus.europe.beans</selectedBeansPackage>
+    <selectedComponentsPackage>com.onehippo.campus.europe.components</selectedComponentsPackage>
+    <selectedRestPackage>com.onehippo.campus.europe.rest</selectedRestPackage>
     <setupDone>true</setupDone>
     <templateLanguage>repository</templateLanguage>
     <useSamples>true</useSamples>

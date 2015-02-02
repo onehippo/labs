@@ -56,7 +56,7 @@
       </sv:property>
     </sv:node>
   </sv:node>
-  <sv:node sv:name="world">
+  <sv:node sv:name="europe">
     <sv:property sv:name="jcr:primaryType" sv:type="Name">
       <sv:value>hst:configuration</sv:value>
     </sv:property>
