@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<project>
+    <name>project-settings</name>
+    <confirmParams>false</confirmParams>
+    <projectNamespace>myhippoproject</projectNamespace>
+    <selectedBeansPackage>org.example.beans</selectedBeansPackage>
+    <selectedComponentsPackage>org.example.components</selectedComponentsPackage>
+    <selectedRestPackage>org.example.rest</selectedRestPackage>
+    <setupDone>true</setupDone>
+    <templateLanguage>jsp</templateLanguage>
+    <useSamples>true</useSamples>
+</project>
