@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<project>
+    <name>project-settings</name>
+    <confirmParams>false</confirmParams>
+    <projectNamespace>hippocloudinarydemo</projectNamespace>
+    <selectedBeansPackage>org.onehippo.beans</selectedBeansPackage>
+    <selectedComponentsPackage>org.onehippo.components</selectedComponentsPackage>
+    <selectedRestPackage>org.onehippo.rest</selectedRestPackage>
+    <setupDone>true</setupDone>
+    <templateLanguage>jsp</templateLanguage>
+    <useSamples>true</useSamples>
+</project>

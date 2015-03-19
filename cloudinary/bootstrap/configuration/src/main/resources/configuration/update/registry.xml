@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?><sv:node xmlns:sv="http://www.jcp.org/jcr/sv/1.0" xmlns:h="http://www.onehippo.org/jcr/xmlimport" sv:name="hippo:registry" h:merge="combine">
+  <sv:node sv:name="useCloudinaryGalleryProcessor">
+    <sv:property sv:name="jcr:primaryType" sv:type="Name">
+      <sv:value>hipposys:updaterinfo</sv:value>
+    </sv:property>
+    <sv:property sv:name="hipposys:batchsize" sv:type="Long">
+      <sv:value>10</sv:value>
+    </sv:property>
+    <sv:property sv:name="hipposys:dryrun" sv:type="Boolean">
+      <sv:value>false</sv:value>
+    </sv:property>
+    <sv:property sv:name="hipposys:query" sv:type="String">
+      <sv:value>//hippo:configuration/hippo:frontend/cms/cms-services/cloudinaryService</sv:value>
+    </sv:property>
+    <sv:property sv:name="hipposys:script" sv:type="String">
+      <sv:value>package org.hippoecm.frontend.plugins.cms.dev.updater&#13;
+&#13;
+import org.onehippo.repository.update.BaseNodeUpdateVisitor&#13;
+import javax.jcr.Node&#13;
+&#13;
+class UpdaterTemplate extends BaseNodeUpdateVisitor {&#13;
+  &#13;
+  def API_KEY = 'key'&#13;
+  def API_SECRET='secret' &#13;
+  def CLOUD_NAME='name' &#13;
+  def GALLERY_PROCESSOR_ID='service.cloudinary.gallery.processor' &#13;
+    final SERVICE_GALLERY_PROCESSOR=['/hippo:configuration/hippo:workflows/gallery/image-gallery/frontend:renderer',&#13;
+                                    '/hippo:namespaces/hippogallery/image/editor:templates/_default_/upload',&#13;
+                                    '/hippo:namespaces/hippogallery/image/editor:templates/_default_/crop',&#13;
+                                    '/hippo:namespaces/hippogallery/image/editor:templates/_default_/regenerate']&#13;
+  &#13;
+&#13;
+  boolean doUpdate(Node node) {&#13;
+    def session = node.getSession();&#13;
+    node.setProperty('api_key',API_KEY)&#13;
+    log.debug("Setting api_key:${API_KEY}")&#13;
+    node.setProperty('api_secret',API_SECRET)&#13;
+    log.debug("Setting api_secret:${API_SECRET}")&#13;
+    node.setProperty('cloud_name',CLOUD_NAME)&#13;
+    log.debug("Setting cloud_name:${CLOUD_NAME}")&#13;
+    for (path in SERVICE_GALLERY_PROCESSOR){&#13;
+      def templatepluginNode = session.getNode(path)&#13;
+      templatepluginNode.setProperty('gallery.processor.id',GALLERY_PROCESSOR_ID)&#13;
+      log.debug("Setting property service.gallery.processor on node ${path} to ${GALLERY_PROCESSOR_ID}")&#13;
+    }&#13;
+    &#13;
+    return true&#13;
+  }&#13;
+&#13;
+  boolean undoUpdate(Node node) {&#13;
+    throw new UnsupportedOperationException('Updater does not implement undoUpdate method')&#13;
+  }&#13;
+&#13;
+}</sv:value>
+    </sv:property>
+    <sv:property sv:name="hipposys:throttle" sv:type="Long">
+      <sv:value>1000</sv:value>
+    </sv:property>
+  </sv:node>
+</sv:node>
