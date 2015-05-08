@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?><sv:node xmlns:sv="http://www.jcp.org/jcr/sv/1.0" sv:name="blogFacets">
+  <sv:property sv:name="jcr:primaryType" sv:type="Name">
+    <sv:value>hippofacnav:facetnavigation</sv:value>
+  </sv:property>
+  <sv:property sv:name="hippo:count" sv:type="Long">
+    <sv:value>2</sv:value>
+  </sv:property>
+  <sv:property sv:name="hippo:docbase" sv:type="String">
+    <sv:value>4cb6200e-64d4-43d7-825a-a1587e4e39e6</sv:value>
+  </sv:property>
+  <sv:property sv:name="hippofacnav:facetnodenames" sv:type="String" sv:multiple="true">
+    <sv:value>Authors</sv:value>
+    <sv:value>Categories</sv:value>
+    <sv:value>Tags</sv:value>
+    <sv:value>Date</sv:value>
+  </sv:property>
+  <sv:property sv:name="hippofacnav:facets" sv:type="String" sv:multiple="true">
+    <sv:value>myhippoproject:authornames</sv:value>
+    <sv:value>myhippoproject:categories</sv:value>
+    <sv:value>hippostd:tags</sv:value>
+    <sv:value>myhippoproject:publicationdate$[
+                {name:'Last 7 days',resolution:'day', begin:-6, end:1},
+                {name:'Last month',resolution:'day', begin:-30, end:1},
+                {name:'Last 3 months',resolution:'day', begin:-91, end:1},
+                {name:'Last 6 months',resolution:'day', begin:-182, end:1},
+                {name:'Last year',resolution:'day', begin:-365, end:1}
+                ]</sv:value>
+  </sv:property>
+  <sv:property sv:name="hippofacnav:filters" sv:type="String" sv:multiple="true">
+    <sv:value>jcr:primaryType = myhippoproject:blogpost</sv:value>
+  </sv:property>
+  <sv:property sv:name="hippofacnav:limit" sv:type="Long">
+    <sv:value>100</sv:value>
+  </sv:property>
+  <sv:property sv:name="hippofacnav:sortby" sv:type="String" sv:multiple="true">
+    <sv:value>myhippoproject:publicationdate</sv:value>
+  </sv:property>
+  <sv:property sv:name="hippofacnav:sortorder" sv:type="String" sv:multiple="true">
+    <sv:value>descending</sv:value>
+  </sv:property>
+</sv:node>
