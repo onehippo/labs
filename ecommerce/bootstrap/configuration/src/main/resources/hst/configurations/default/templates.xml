@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?><sv:node xmlns:sv="http://www.jcp.org/jcr/sv/1.0" xmlns:esv="http://www.onehippo.org/jcr/xmlimport" sv:name="hst:templates" esv:merge="combine">
+  <sv:node sv:name="search-box">
+    <sv:property sv:name="jcr:primaryType" sv:type="Name">
+      <sv:value>hst:template</sv:value>
+    </sv:property>
+    <sv:property sv:name="hst:renderpath" sv:type="String">
+      <sv:value>webfile:/freemarker/hstdefault/search-box.ftl</sv:value>
+    </sv:property>
+  </sv:node>
+  <sv:node sv:name="essentials-carousel">
+    <sv:property sv:name="jcr:primaryType" sv:type="Name">
+      <sv:value>hst:template</sv:value>
+    </sv:property>
+    <sv:property sv:name="hst:renderpath" sv:type="String">
+      <sv:value>webfile:/freemarker/hstdefault/essentials-carousel.ftl</sv:value>
+    </sv:property>
+  </sv:node>
+  <sv:node sv:name="essentials-banner">
+    <sv:property sv:name="jcr:primaryType" sv:type="Name">
+      <sv:value>hst:template</sv:value>
+    </sv:property>
+    <sv:property sv:name="hst:renderpath" sv:type="String">
+      <sv:value>webfile:/freemarker/hstdefault/essentials-banner.ftl</sv:value>
+    </sv:property>
+  </sv:node>
+  <sv:node sv:name="contentpage-main">
+    <sv:property sv:name="jcr:primaryType" sv:type="Name">
+      <sv:value>hst:template</sv:value>
+    </sv:property>
+    <sv:property sv:name="hst:renderpath" sv:type="String">
+      <sv:value>webfile:/freemarker/hstdefault/contentpage-main.ftl</sv:value>
+    </sv:property>
+  </sv:node>
+  <sv:node sv:name="newslist-main-newslist">
+    <sv:property sv:name="jcr:primaryType" sv:type="Name">
+      <sv:value>hst:template</sv:value>
+    </sv:property>
+    <sv:property sv:name="hst:renderpath" sv:type="String">
+      <sv:value>webfile:/freemarker/hstdefault/newslist-main-newslist.ftl</sv:value>
+    </sv:property>
+  </sv:node>
+</sv:node>

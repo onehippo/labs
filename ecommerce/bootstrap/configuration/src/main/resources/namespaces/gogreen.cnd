@@ -1,0 +1,25 @@
+<'gogreen'='http://www.onehippo.org/gogreen/nt/1.0'>
+<'hippo'='http://www.onehippo.org/jcr/hippo/nt/2.0.4'>
+<'hippogallery'='http://www.onehippo.org/jcr/hippogallery/nt/2.0'>
+<'hippostd'='http://www.onehippo.org/jcr/hippostd/nt/2.0'>
+<'hippostdpubwf'='http://www.onehippo.org/jcr/hippostdpubwf/nt/1.0'>
+<'hippotranslation'='http://www.onehippo.org/jcr/hippotranslation/nt/1.0'>
+
+[gogreen:basedocument] > hippo:document, hippostd:publishableSummary, hippostdpubwf:document
+  orderable
+
+[gogreen:bannerdocument] > gogreen:basedocument, hippostd:relaxed, hippotranslation:translated
+  orderable
+
+[gogreen:contentdocument] > gogreen:basedocument, hippostd:relaxed, hippotranslation:translated
+  orderable
+
+[gogreen:imageset] > hippogallery:imageset, hippogallery:relaxed
+  orderable
+
+[gogreen:newsdocument] > gogreen:basedocument, hippostd:relaxed, hippotranslation:translated
+  orderable
+
+[gogreen:product] > gogreen:basedocument, hippostd:relaxed, hippotranslation:translated
+  orderable
+

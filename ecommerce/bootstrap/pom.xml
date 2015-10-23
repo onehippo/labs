@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0          http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>org.example</groupId>
+    <artifactId>gogreen</artifactId>
+    <version>1.01.00-SNAPSHOT</version>
+  </parent>
+
+  <name>GoGreen Bootstrap</name>
+  <description>GoGreen Bootstrap</description>
+  <artifactId>gogreen-bootstrap</artifactId>
+  <packaging>pom</packaging>
+
+  <modules>
+    <module>configuration</module>
+    <module>content</module>
+    <module>webfiles</module>
+  </modules>
+
+</project>

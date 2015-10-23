@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<project>
+    <name>project-settings</name>
+    <beansFolder>site/src/main/java</beansFolder>
+    <bootstrapModule>bootstrap</bootstrapModule>
+    <cmsModule>cms</cmsModule>
+    <confirmParams>false</confirmParams>
+    <extraTemplates>true</extraTemplates>
+    <projectNamespace>gogreen</projectNamespace>
+    <selectedBeansPackage>org.example.beans</selectedBeansPackage>
+    <selectedComponentsPackage>org.example.components</selectedComponentsPackage>
+    <selectedRestPackage>org.example.rest</selectedRestPackage>
+    <setupDone>true</setupDone>
+    <siteModule>site</siteModule>
+    <templateLanguage>freemarker</templateLanguage>
+    <useSamples>true</useSamples>
+    <webfilesSubModule>webfiles</webfilesSubModule>
+</project>
