@@ -68,7 +68,7 @@
     <jstl.version>1.1.2</jstl.version>
     <taglibs.version>1.1.2</taglibs.version>
     <commons.lang.version>2.6</commons.lang.version>
-    <junit.version>4.10</junit.version>
+    <junit.version>4.13.1</junit.version>
     <easymock.version>3.1</easymock.version>
      
     <filesync.override>false</filesync.override>
